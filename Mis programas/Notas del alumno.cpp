@@ -42,5 +42,6 @@ int main()
         cout<<"Aprobaste con un promedio de "<<promedio<<endl;
     }
     cout<<"";
-    system("\nread -p '\nPresiona Enter para continuar...' var");
+    //system("pause"); si usas windows le quitas las barras
+    // system("\nread -p '\nPresiona Enter para continuar...' var"); si usas linux le quitas las barras
 }
