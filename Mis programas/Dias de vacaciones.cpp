@@ -13,7 +13,7 @@ int main()
 {
     setlocale(LC_CTYPE,"Spanish");
     time_t t=time(NULL);
-    tm* timePtr=localtime(&t);
+    tm *timePtr=localtime(&t);
     int aActual=timePtr->tm_year+1900,n;
     cout<<"Ingresa la cantidad de empleados: ";cin>>n;
     cout<<"\nIngresa los años de ingreso de cada empleado\n"<<endl;
