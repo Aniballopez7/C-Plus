@@ -43,5 +43,5 @@ int main()
     }
     cout<<"";
     //system("pause"); si usas windows le quitas las barras
-    // system("\nread -p '\nPresiona Enter para continuar...' var"); si usas linux le quitas las barras
+    //system("\nread -p '\nPresiona Enter para continuar...' var"); si usas linux le quitas las barras
 }
