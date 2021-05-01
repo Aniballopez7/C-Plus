@@ -35,7 +35,7 @@ int main()
     cout<<"\n";
     if (promedio <= 5.9)
     {
-        cout<<"No aprobaste el semestre"<<endl;
+        cout<<"No aprobaste el semestre"<<promedio<<endl;
     }
     if (promedio > 6)
     {
