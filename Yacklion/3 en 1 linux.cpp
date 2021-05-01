@@ -22,7 +22,7 @@ int main(){
     cout<<"3. Volumen de una esfera"<<endl;
     cout<<"4. Salir\n"<<endl;
     cout<<"Ingrese una opcion: ";cin>>opc;
-    system("cls");  
+    system("clear");  
     switch (opc){
         case 1:
             cout<<"************************"<<endl;
@@ -32,8 +32,8 @@ int main(){
             cout<<"Ingrese la altura del triangulo: ";cin>>h;
             a = (b * h) / 2; //Formula
             cout<<"\nEl area del triagulo es: "<<a<<endl;
-            system("pause");
-            system("cls");
+            system("\nread -p '\nPresione Enter para volver al menu...' ...var");
+            system("clear");
             goto regresar;
             break;
         case 2:
@@ -51,8 +51,8 @@ int main(){
                 cout<<"\nEl alumno no paso la materia"<<endl;
             }
             cout<<"\nEl promedio del alumno es de: "<<p<<endl;
-            system("pause");
-            system("cls");
+            system("\nread -p '\nPresione Enter para volver al menu...' var");
+            system("clear");
             goto regresar;
             break;
         case 3:
@@ -63,9 +63,7 @@ int main(){
             cout<<"2. Volumen de una esfera media"<<endl;
             cout<<"3. Salir\n"<<endl;
             cout<<"Ingrese una opcion: ";cin>>opc;
-            system("pause");
-            system("cls");
-            goto regresar;
+            system("clear");
             switch (opc){
                 case 1:
                     cout<<"*************************"<<endl;
@@ -74,8 +72,8 @@ int main(){
                     cout<<"Ingrese el radio de la esfera: ";cin>>r;
                     v =  1.33333333 * M_PI * pow(r,3);
                     cout<<"\nEl volumen de la esfera es: "<<v<<endl;
-                    system("pause");
-                    system("cls");
+                    system("\nread -p '\nPresione Enter para volver al menu...' var");
+                    system("clear");
                     goto regresar;
                     break;
                 case 2:
@@ -85,16 +83,17 @@ int main(){
                     cout<<"Ingrese el radio de la esfera: ";cin>>r;
                     v =  1.33 * M_PI * pow(r,3) / 2;
                     cout<<"\nEl volumen medio de la esfera es: "<<v<<endl;
-                    system("pause");
-                    system("cls");
+                    system("\nread -p '\nPresione Enter para volver al menu...' var");
+                    system("clear");
                     goto regresar;
+                    break;
                 case 3:
                     goto regresar;
                     break;
             }//Fin del swift esfera
         case 4:
-            system("pause");
-            system("cls");
+            system("\nread -p '\nPresione Enter para continuar' var");
+            system("clear");
             return 0;
             break;
     } //Fin del swift del menu principal
