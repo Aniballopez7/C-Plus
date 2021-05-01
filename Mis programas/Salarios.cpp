@@ -6,22 +6,28 @@ struct Empleados
 {
     char nombre[30];
     float salario;
-}empleados[3]={{"Juana"},{"Maria"},{"Kuso"}};
+}empleados[3];
 
 int main()
 {
     int n;
     char auxNombre[30];
     float auxSalario;
+    cout<<"Ingrese cuantos empleados son: ";cin>>n;
+    for (int i = 0; i < n; i++)
+    {
+        cout<<"Ingrese el nombre de lo empleados: ";cin>>empleados[i].nombre;
+    }
+    
     cout<<"Ingrese los salarios de los siguientes empleados:\n"<<endl;
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < n; i++)
     {
         cout<<"Salario de "<<empleados[i].nombre<<": ";cin>>empleados[i].salario;
     }
     cout<<"\n";
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < 2; j++)
+        for (int j = 0; j < n-1; j++)
         {
             if (empleados[j].salario>empleados[j+1].salario)
             {
@@ -37,10 +43,11 @@ int main()
         }
     }
     cout<<"Salarios ordenados:\n"<<endl;
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < n; i++)
     {
         cout<<"El empleado "<<empleados[i].nombre<<" gana: "<<empleados[i].salario<<endl;
     }
-    
-    system("\nread -p '\nPresiona Enter para continuar...' var");
+    //Si usas windows o linux solo borra o agrega //
+    //system("pause"); si usas windows le quitas las barras y borras la linea de abajo
+    system("\nread -p '\nPresiona Enter para continuar...' var"); //si usas linux deja esta linea y borra la linea de arriba
 }
