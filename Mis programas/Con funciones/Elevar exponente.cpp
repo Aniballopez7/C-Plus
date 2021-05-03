@@ -25,11 +25,6 @@ void pedirDatos(){
 }
 //TODO: retornar
 int retornarExpo(int a,int b){
-    /*
-    long resultado;
-    resultado = a*b;
-    return resultado;
-    */
     return pow(a,b);
 }
 //TODO: mostrar
