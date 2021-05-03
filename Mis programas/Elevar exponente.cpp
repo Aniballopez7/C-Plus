@@ -34,9 +34,8 @@ int retornarExpo(int a,int b){
 }
 //TODO: mostrar
 void mostrarExpo(int a, int b){
-    int resultado;
-    resultado = pow(a,b);
-    cout<<"El resultado es: "<<resultado<<endl;
+    int resultado = retornarExpo(a,b);
+    cout<<"Resultado: "<<resultado<<endl;
 }
 //TODO: Funcion principal
 int main()
