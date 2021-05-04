@@ -2,10 +2,8 @@
 #include<string.h>
 #include <typeinfo>
 using namespace std; 
-
 template <class Tipo1, class Tipo2>
 void Mostrar(Tipo1 dato1,Tipo2 dato2);
-
 int main()
 {
     int e=6;
@@ -14,7 +12,6 @@ int main()
     Mostrar(f,x);
     system("\nread -p '\nPresiona Enter para continuar...' var");
 }
-
 template <class Tipo1, class Tipo2>
 void Mostrar(Tipo1 dato1,Tipo2 dato2){
     if (string(typeid(dato1).name())=="c" || string(typeid(dato2).name())=="c")

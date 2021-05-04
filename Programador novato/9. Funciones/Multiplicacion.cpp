@@ -35,7 +35,7 @@ int retornaMul(int a,int b){
     */
     return a*b;
 }
-//Desde la funcion muestra
+//Desde la funcion muestraMul
 void muestraMul(int a,int b){
     int resultado;
     resultado = a*b;

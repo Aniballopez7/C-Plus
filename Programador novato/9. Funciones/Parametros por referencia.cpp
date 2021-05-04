@@ -1,8 +1,6 @@
 #include<iostream>
 using namespace std; 
-
 void cambio(int&,int&);
-
 int main()
 {
     int n1,n2;
@@ -17,7 +15,6 @@ int main()
     cout<<n2<<endl;
     system("\nread -p '\nPresiona Enter para continuar...' var");
 }
-
 void cambio(int& n1,int& n2){
     n1 = 20;
     n2 = 10;

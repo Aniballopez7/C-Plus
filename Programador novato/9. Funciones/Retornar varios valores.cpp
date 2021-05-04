@@ -14,6 +14,7 @@ int main(){
     system("pause");
     return 0;
 }
+
 int *calculaRetorno(int num1,int num2){
     int suma=num1+num2;
     int multiplicacion=num1*num2;
