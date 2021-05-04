@@ -3,14 +3,14 @@ using namespace std;
 int *calculaRetorno(int,int);
 int main(){
     int num1,num2,suma=0,multiplicacion=0;
-    cout<<"Humano ingresa dos numeros\n";
+    cout<<"Ingresa dos numeros\n";
     cout<<"Numero 1: ";cin>>num1;
     cout<<"Numero 2: ";cin>>num2;
     int *resultado=calculaRetorno(num1,num2);
     suma=resultado[0];
     multiplicacion=resultado[1];
-    cout<<"El resultado de la suma es: "<<suma<<"\n";
-    cout<<"El resultado de la nultiplicacion es: "<<multiplicacion<<"\n";
+    cout<<"El resultado de la suma es: "<<suma<<endl;
+    cout<<"El resultado de la nultiplicacion es: "<<multiplicacion<<endl;
     system("pause");
     return 0;
 }
