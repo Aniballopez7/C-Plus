@@ -1,9 +1,9 @@
 Sintaxis:
 
-    Windows												              Linux
+    Windows												        Linux
 
-system("pause") 		=		  system("\nread -p '\nPresiona Enter para continuar...' var") 
-system("cls")			  =							        system("clear")
+system("pause") 		=		    system("\nread -p '\nPresiona Enter para continuar...' var") 
+system("cls")			=							       system("clear")
 
 NOTA: Yo utilizo Visual studio code como entorno de desarrollo.
 
