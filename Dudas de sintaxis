@@ -1,10 +1,9 @@
--------------------------------------------------------------------------------------------------
-Sintaxis:                                                                                       |
-                                                                                                |
-    Windows		    			                        Linux                                   |
-                                                                                                |
-system("pause") 		=		system("\nread -p '\nPresiona Enter para continuar...' var")    |
-system("cls")			=	        system("clear")                                             |
+Sintaxis:                                                                                       
+                                                                                                
+    Windows		    			                        Linux                                   
+                                                                                                
+system("pause") 		=		system("\nread -p '\nPresiona Enter para continuar...' var")    
+system("cls")			=	        system("clear")                                             
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 NOTAS: Yo utilizo Visual studio code como entorno de desarrollo.                                                                                        |
                                                                                                                                                         |
