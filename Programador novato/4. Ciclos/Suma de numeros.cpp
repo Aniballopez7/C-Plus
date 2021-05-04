@@ -4,20 +4,19 @@ Validar que el número n sea mayor a 1.
 El programa hará un ciclo que sume los números 1+2+3 hasta n.
 */
 #include <iostream>
-
+using namespace std;
 int main(){
     int numero,suma=0;
     do
     {
-        std::cout<<"Humano, porfavor ingresa un numero mayor a 1: ";
-        std::cin>>numero;
+        cout<<"Ingresa un numero mayor a 1: ";cin>>numero;
     } while (numero<=1);
     for (int i = 1; i <= numero; i++)
     {
-        suma=suma+i;
-        std::cout<<i<<"+";
+        suma += i;
+        cout<<i<<"+";
     }
-    std::cout<<"\nAqui esta tu pinche suma: "<<suma<<"\n";
+    cout<<"\nSuma: "<<suma<<"\n";
     system("pause");
     return 0;
 }

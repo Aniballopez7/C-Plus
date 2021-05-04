@@ -1,9 +1,9 @@
 #include <iostream>
-
+using namespace std;
 int main(){
     int opcion;
     float total=1000,ingreso,egreso;
-    std::cout<<"¡¡Humano bienvenido al banco!!\n";
+    std::cout<<"Bienvenido al banco\n";
     regreso:
     std::cout<<"Por favor digita una opcion:\n";
     std::cout<<"1.- Ingreso de dinero\n";
@@ -16,13 +16,13 @@ int main(){
         std::cout<<"Cuanto dinero vas a ingresar? ";
         std::cin>>ingreso;
         total+=ingreso;
-        std::cout<<"Humano tienes en el bancon $"<<total<<"\n";
+        std::cout<<"Tienes en el bancon $"<<total<<"\n";
         goto regreso;
     case 2:
         std::cout<<"Cuanto dinero deseas sacar: ";
         std::cin>>egreso;
         if(egreso>total){
-            std::cout<<"Haaaa piche humano cabron, no tienes tanto dinero, tienes "<<total<<"\n";
+            std::cout<<"No tienes tanto dinero, tienes "<<total<<"\n";
         }else{
             total-=egreso;
             std::cout<<"Te queda en el banco $"<<total<<"\n";

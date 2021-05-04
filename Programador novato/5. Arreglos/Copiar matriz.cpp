@@ -1,17 +1,16 @@
 #include <iostream>
-
+using namespace std;
 int main(){
     int matriza[100][100],matrizb[100][100],filas,columnas;
-    std::cout<<"Humano ingresa la catidad de filas y columnas de tu matriz : ";
-    std::cin>>filas>>columnas;
+    cout<<"Ingresa la catidad de filas de tu matriz : ";cin>>filas;
+    cout<<"Ingresa la catidad de columnas de tu matriz : ";cin>>columnas;
     for (int i = 0; i < filas; i++)
     {
         for (int j = 0; j < columnas; j++)
         {
-            std::cout<<"Humano ingresa la pocicion ["<<i+1<<"]["<<j+1<<"]: ";
-            std::cin>>matriza[i][j];
+            cout<<"Ingresa la pocicion ["<<i+1<<"]["<<j+1<<"]: ";
+            cin>>matriza[i][j];
         }
-        
     }
     for (int i = 0; i < filas; i++)
     {
@@ -22,17 +21,16 @@ int main(){
         
         
     }
-    std::cout<<"\n\n";
+    cout<<"\n";
     for (int i = 0; i < filas; i++)
     {
         for (int j = 0; j < columnas; j++)
         {
-            std::cout<<matrizb[i][j]<<" ";
+            cout<<matrizb[i][j]<<" ";
         }
-        std::cout<<"\n";
+        cout<<"\n";
     }
-    std::cout<<"\n\n";
-
+    cout<<"\n";
     system("pause");
     return 0;
 }

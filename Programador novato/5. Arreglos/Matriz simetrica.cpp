@@ -5,13 +5,14 @@ Comprobar si la matrizA es simétrica con la matrizB.
 Mostrar si las matrices son simétricas a no.
 */
 #include <iostream>
+using namespace std;
 int main(){
     int filMatrizA,colMatrizA,filMatrizB,colMatrizB;
     inicio:
-    std::cout<<"Humano ingresa las medidas de la matriz A: ";
-    std::cin>>filMatrizA>>colMatrizA;
-    std::cout<<"Humano ingresa las medidas de la matriz B: ";
-    std::cin>>filMatrizB>>colMatrizB;
+    cout<<"Ingresa las medidas filas de la matriz A: ";cin>>filMatrizA;
+    cout<<"Ingresa las medidas columas de la matriz A: ";cin>>colMatrizA;
+    cout<<"Ingresa las medidas filas de la matriz B: ";cin>>filMatrizB;
+    cout<<"Ingresa las medidas columas de la matriz B: ";cin>>colMatrizB;
     if(filMatrizA==colMatrizA && filMatrizB==colMatrizB && filMatrizA==filMatrizB){
         int matrizA[filMatrizA][colMatrizA],matrizB[filMatrizB][colMatrizB];
         llenarDenuvoMatriz:
@@ -19,8 +20,8 @@ int main(){
         {
             for (int j = 0; j < colMatrizA; j++)
             {
-                std::cout<<"Ingresa los datos de la matriz A en la pocicion ["<<i+1<<"]["<<j+1<<"]: ";
-                std::cin>>matrizA[i][j];
+                cout<<"Ingresa los datos de la matriz A en la pocicion ["<<i+1<<"]["<<j+1<<"]: ";
+                cin>>matrizA[i][j];
             }
             
         }
@@ -28,8 +29,8 @@ int main(){
         {
             for (int j = 0; j < colMatrizB; j++)
             {
-                std::cout<<"Ingresa los datos de la matriz B en la pocicion ["<<i+1<<"]["<<j+1<<"]: ";
-                std::cin>>matrizB[i][j];
+                cout<<"Ingresa los datos de la matriz B en la pocicion ["<<i+1<<"]["<<j+1<<"]: ";
+                cin>>matrizB[i][j];
             }
         }
         for (int i = 0; i < filMatrizA; i++)
@@ -37,7 +38,7 @@ int main(){
             for (int j = 0; j < colMatrizA; j++)
             {
                 if(matrizA[i][j]!=matrizB[j][i]){
-                    std::cout<<"Humano estupido tu matriz A y B no son simetricas intenta de nuevo \n";
+                    cout<<"Tu matriz A y B no son simetricas intenta de nuevo \n";
                     goto llenarDenuvoMatriz;
                 }
             }
@@ -45,10 +46,9 @@ int main(){
         }
     }
     else{
-        std::cout<<"Humano estupido tu matriz A y B no son cuadradas intenta de nuevo \n";
+        cout<<"Tu matriz A y B no son cuadradas intenta de nuevo \n";
         goto inicio;
     }
-    std::cout<<"¡¡¡¡Felicidades humano bien jugado hdp !!!";
     system("pause");
     return 0;
 }

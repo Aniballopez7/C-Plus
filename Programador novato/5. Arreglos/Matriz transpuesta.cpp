@@ -5,19 +5,17 @@ Llenar la matrizB con los datos transpuestos de la matrizA
 Imprimir matrizA y matrizB.
 */
 #include <iostream>
-
+using namespace std;
 int main(){
     int matrizA[3][3],matrizB[3][3];
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
         {
-            std::cout<<"Humano ingresa los datos de la matriz en la pocicion ["<<i+1<<"]["<<j+1<<"]: ";
-            std::cin>>matrizA[i][j];
+            cout<<"Ingresa los datos de la matriz en la pocicion ["<<i+1<<"]["<<j+1<<"]: ";cin>>matrizA[i][j];
         }
         
     }
-    
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
@@ -26,26 +24,24 @@ int main(){
         }
         
     }
-    std::cout<<"\nMATRIZ A\n";
+    cout<<"\nMATRIZ A\n";
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
         {
-            std::cout<<matrizA[i][j]<<" ";
+            cout<<matrizA[i][j]<<" ";
         }
-        std::cout<<"\n";
+        cout<<"\n";
     }
-    std::cout<<"\n\nMATRIZ B\n";
+    cout<<"\n\nMATRIZ B\n";
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
         {
-            std::cout<<matrizB[i][j]<<" ";
+            cout<<matrizB[i][j]<<" ";
         }
-        std::cout<<"\n";
+        cout<<"\n";
     }
-    
-
     system("pause");
     return 0;
 }

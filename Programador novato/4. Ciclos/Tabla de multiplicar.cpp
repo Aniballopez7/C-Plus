@@ -5,22 +5,20 @@ y que valide que este dentro el rango de 1 y 10.
 Mostrar los múltiplos de  de ese número del 1 al 10.
 */
 #include<iostream>
-
+using namespace std;
 int main(){
     int numero;
     do{
-        std::cout<<"A ver humano, digita un numero entre 1 y 10: ";
-        std::cin>>numero;
+        cout<<"Digita un numero entre 1 y 10: ";cin>>numero;
         if(numero<1 || numero>10){
-            std::cout<<"Humano estupido te dije que digitaras un numero entre 1 y 10.\n";
+            cout<<"Dije que digitaras un numero entre 1 y 10.\n";
         }
     }while(numero<1 || numero>10);
-    std::cout<<"\n\n";
+    cout<<"\n\n";
     for (int i = 1; i <= 10; i++)
     {
-        std::cout<<i<<" x "<<numero<<"="<<i*numero<<"\n";
+        cout<<i<<" x "<<numero<<"="<<i*numero<<"\n";
     }
-    
     system("pause");
     return 0;
 }

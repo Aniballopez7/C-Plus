@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 int main(){
     int i;
     i=10;
@@ -8,8 +8,6 @@ int main(){
         std::cout<<i<<"\n";
         i--;
     }
-    
-
     system("pause");
     return 0;
 }

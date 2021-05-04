@@ -2,7 +2,7 @@
 
 int main(){
     float a,b,c,d,e,f,res;
-    std::cout<<"Humano ingresa los valores numericos que se te pida\n";
+    std::cout<<"Ingresa los valores numericos que se te pida\n";
     std::cout<<"Valor a: ";std::cin>>a;
     std::cout<<"Valor b: ";std::cin>>b;
     std::cout<<"Valor c: ";std::cin>>c;
@@ -12,7 +12,7 @@ int main(){
 
     res=(a+(b/c)) / (d+(e/f));
 
-    std::cout<<"\nHumano aqui esta tu piche resultado: "<<res<<"\n";
+    std::cout<<"\nResultado: "<<res<<"\n";
 
     system("pause");
     return 0;

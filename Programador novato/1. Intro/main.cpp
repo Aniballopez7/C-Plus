@@ -1,9 +1,8 @@
 // Este es mi prime hola mundo, put.. el que lo lea
 
 #include <iostream>
-
+using namespace std;
 int main(){
-    std::cout << "Hola mundo";
-    std::cin.get();
+    cout << "Hola mundo"<<endl;
     return 0;
 }

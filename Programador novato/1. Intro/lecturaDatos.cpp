@@ -1,13 +1,12 @@
 #include <iostream>
-
+using namespace std;
 int main(){
     float numero;
-    std::cout<<"Humano!!! ingresa un numero entero: ";
-    std::cin>>numero;
-    std::cout<<"Humano este es el numero que ingresaste:";
-    std::cout<<numero;
-    std::cout<<"\n";
-    //std::cin.get();
+    cout<<"Ingresa un numero entero: ";
+    cin>>numero;
+    cout<<"Este es el numero que ingresaste:";
+    cout<<numero;
+    cout<<"\n";
     system("pause");
     return 0;
 }

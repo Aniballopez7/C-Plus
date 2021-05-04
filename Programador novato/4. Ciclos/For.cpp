@@ -1,8 +1,8 @@
 #include <iostream>
-
+using namespace std;
 int main(){
     for(int i=10;i>=1;i-=2){
-        std::cout<<i<<"\n";
+        cout<<i<<"\n";
     }
     system("pause");
     return 0;

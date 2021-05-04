@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 int main(){
     int edad;
     std::cout<<"Escribe la edad del candidato: ";
