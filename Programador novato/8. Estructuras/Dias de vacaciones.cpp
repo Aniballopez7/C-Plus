@@ -2,13 +2,11 @@
 #include<ctime>
 #include <clocale>
 using namespace std;
-
 struct Empleados
 {
     char nombre[50];
     int aIngresos,aTrabajado,diasV;
 }empleados[3]={{"pepe"},{"maria"},"kuso"};
-
 int main()
 {
     setlocale(LC_CTYPE,"Spanish");

@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std; 
-
 struct Direccion
 {
     char pais[15],estado[15],municipio[15];
@@ -18,8 +17,6 @@ struct Clientes
     char telefono[12];
     struct Direccion dirClientes;
 }c1,c2;
-
-
 int main()
 {
     cout<<"*************"<<endl;

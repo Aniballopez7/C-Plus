@@ -5,13 +5,11 @@ struct Materias
     char nombre[30];
     float notas;
 }materias[3]={{"Programacion",0},{"Estructuras de datos",0},{"Matematicas",0}};
-
 int main()
 {
     float suma=0,promedio;
     regresar:
     cout<<"\nIngrese las notas de las materias\n"<<endl;
-
     for (int i = 0; i < 3; i++)
     {
         cout<<materias[i].nombre<<": ";

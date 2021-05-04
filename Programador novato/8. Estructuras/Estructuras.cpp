@@ -4,7 +4,6 @@ Que almacene Nombre, dirección y teléfono de 3 empleados.
 Pedir al humano que ingrese Nombre y dirección de 2 clientes.
 */
 #include <iostream>
-
 struct Empleados
 {
     char nombre[65];
@@ -14,14 +13,11 @@ struct Empleados
 e1={"juan","argentina","646532154"},
 e2={"maria","mexico","987654654987"},
 e3={"pepe","chile","6546546654"};
-
 struct Clientes
 {
     char nombre[65];
     char direccion[65];
 }c1,c2;
-
-
 int main(){
     std::cout<<"EMPLEADO\n";
     std::cout<<"Nombre e1: "<<e1.nombre<<" Direccion: "<<e1.direccion<<" Telefono: "<<e1.telefono<<"\n";

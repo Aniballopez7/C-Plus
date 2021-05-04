@@ -1,17 +1,13 @@
 #include<iostream>
 using namespace std;
-
 struct Empleados
 {
     char id[6];
     char nombre[30];
 }empleados[2];
-
 int main(){
     bool esNumero=true;
-    
     cout<<"Ingresa los datos del empleado\n"<<endl;
-
     for (int i = 0; i < 2; i++)
     {
         esNumero==true;

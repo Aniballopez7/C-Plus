@@ -1,13 +1,11 @@
 #include<iostream>
 #include<string.h>
 using namespace std; 
-
 struct Empleados
 {
     char nombre[30];
     float salario;
 }empleados[3]={{"Juana"},{"Maria"},{"Kuso"}};
-
 int main()
 {
     int n;
@@ -41,6 +39,5 @@ int main()
     {
         cout<<"El empleado "<<empleados[i].nombre<<" gana: "<<empleados[i].salario<<endl;
     }
-    
     system("\nread -p '\nPresiona Enter para continuar...' var");
 }
