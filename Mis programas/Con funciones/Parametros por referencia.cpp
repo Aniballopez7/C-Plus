@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std; 
-
 void cambio(int&,int&);
 void cambio1(int&,int&);
 int main()
@@ -25,7 +24,6 @@ void cambio1(int& n1,int& n2){
     n1 = 60;
     n2 = 30;
 }
-
 void cambio(int& n1,int& n2){
     int aux;
     aux = n1;

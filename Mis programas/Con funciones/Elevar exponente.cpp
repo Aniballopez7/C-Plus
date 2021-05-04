@@ -32,7 +32,7 @@ void mostrarExpo(int a, int b){
     int resultado = retornarExpo(a,b);
     cout<<"Resultado: "<<resultado<<endl;
 }
-//TODO: Funcion principal
+//TODO: Funcion principal main
 int main()
 {
     int resultado;
