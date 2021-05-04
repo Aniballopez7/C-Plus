@@ -7,9 +7,10 @@ int main(){
     cout<<"Humano ingresa dos numeros\n";
     cout<<"Numero 1: ";cin>>n1;
     cout<<"Numero 2: ";cin>>n2;
+    cout<<"\n";
     calcularRef(n1,n2,suma,mul);
     cout<<"El resultado de la suma es: "<<suma<<"\n";
-    cout<<"El resultado de la nultiplicacion es: "<<mul<<"\n";
+    cout<<"El resultado de la multiplicacion es: "<<mul<<"\n";
     system("pause");
     return 0;
 }
