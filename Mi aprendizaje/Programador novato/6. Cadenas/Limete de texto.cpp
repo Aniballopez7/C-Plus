@@ -5,17 +5,17 @@ Si tiene más de 10 letras felicitarlo.
 */
 #include <iostream>
 #include <string.h>
+using namespace std; 
 int main(){
     char texto[10];
     int longitud=0;
     regreso:
-    std::cout<<"Humano por favor ingresa un texto con un minimo de 10 letras: ";
-    gets(texto);
+    cout<<"Ingresa un texto con un minimo de 10 letras: ";cin.getline(texto,10,'\n');
     longitud=strlen(texto);
     if(longitud>=10){
-        std::cout<<"Felicidades humano, ahora dame la patita\n";
+        cout<<"Felicidades humano\n";
     }else{
-        std::cout<<"Humano estupido te dije que mas de 10 letras, intentalo de nuevo\n";
+        cout<<"Dije que mas de 10 letras, intentalo de nuevo\n";
         goto regreso;
     }
     system("pause");

@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std; 
 int main(){
     int lista[]={1,2,3,4,5},valor,con,inf,sup,mitad,tam;
     bool encontrado=false;
@@ -7,15 +8,12 @@ int main(){
     con=0;
     inf=0;
     sup=tam;
-
-    std::cout<<"Humano ingresa un valor de la siguiente lista: ";
+    cout<<"Ingresa un valor de la siguiente lista: ";
     for (int i = 0; i < tam; i++)
     {
-        std::cout<<lista[i]<<" ";
+        cout<<lista[i]<<" ";
     }
-    std::cout<<"\nIngresa el valor:";
-    std::cin>>valor;
-
+    cout<<"\nIngresa el valor:";cin>>valor;
     while ( (inf<=sup) && con<tam )
     {
         mitad=(inf+sup)/2;
@@ -34,14 +32,12 @@ int main(){
         con++;
     }
     if( encontrado==false ){
-        std::cout<<"Huamno estupido intentalo de nuevo:\n ";
+        cout<<"Intentalo de nuevo:\n ";
         goto regresa;
     }
     if(encontrado==true){
-        std::cout<<"Bien echo humano el valor fue encontrado en la posicion: "<<mitad+1<<", ahora dame la patita :)\n ";
+        cout<<"El valor fue encontrado en la posicion: "<<mitad+1<<"\n ";
     }
-
-
     system("pause");
     return 0;
 }

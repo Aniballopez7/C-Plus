@@ -1,11 +1,11 @@
 #include <iostream>
-
+using namespace std; 
 int main(){
     int numeros[5],aux,pos=0;
-    std::cout<<"Humano ingresa los siguientes datos:\n";
+    cout<<"Ingresa los siguientes datos:\n";
     for (int i = 0; i < 5; i++)
     {
-        std::cin>>numeros[i];
+        cin>>numeros[i];
     }
     for (int i = 0; i < 5; i++)
     {
@@ -18,17 +18,16 @@ int main(){
         }
         numeros[pos]=aux;
     }
-    std::cout<<"Humano aqui estan tus pinches numero ordenados de forma acendente:\n";
+    cout<<"Numero ordenados de forma acendente:\n";
     for (int i = 0; i < 5; i++)
     {
-        std::cout<<numeros[i]<<"\n";
+        cout<<numeros[i]<<"\n";
     }
-    std::cout<<"Humano aqui estan tus pinches numero ordenados de forma decendente:\n";
+    cout<<"Numero ordenados de forma decendente:\n";
     for (int i = 4; i >= 0; i--)
     {
-        std::cout<<numeros[i]<<"\n";
+        cout<<numeros[i]<<"\n";
     }
-    
     system("pause");
     return 0;
 }

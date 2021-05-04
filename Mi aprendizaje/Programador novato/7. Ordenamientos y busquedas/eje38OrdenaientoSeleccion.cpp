@@ -1,12 +1,11 @@
 #include <iostream>
-
+using namespace std; 
 int main(){
     int numeros[5],min,aux;
-    std::cout<<"Humano ingresa 5 numeros enteros:\n";
+    cout<<"Ingresa 5 numeros enteros:\n";
     for (int i = 0; i < 5; i++)
     {
-        std::cout<<i+1<<" ";
-        std::cin>>numeros[i];
+        cout<<i+1<<" ";cin>>numeros[i];
     }
     for (int i = 0; i < 5; i++)
     {
@@ -21,15 +20,15 @@ int main(){
         numeros[i]=numeros[min];
         numeros[min]=aux;
     }
-    std::cout<<"Humano aqui esta tu pinches numero ordenados de forma acendente:\n";
+    cout<<"Numero ordenados de forma acendente:\n";
     for (int i = 0; i < 5; i++)
     {
-        std::cout<<numeros[i]<<"\n";
+        cout<<numeros[i]<<"\n";
     }
-    std::cout<<"Humano aqui esta tu pinches numero ordenados de forma decendente:\n";
+    cout<<"Numero ordenados de forma decendente:\n";
     for (int i = 4; i >= 0; i--)
     {
-        std::cout<<numeros[i]<<"\n";
+        cout<<numeros[i]<<"\n";
     }
 
     

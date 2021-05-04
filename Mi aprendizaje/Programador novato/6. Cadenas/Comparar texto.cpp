@@ -7,22 +7,22 @@ Mostrar si:
 */
 #include <iostream>
 #include <string.h>
-
+using namespace std; 
 int main(){
     char texto1[]="AYER";
     char texto2[]="ayer";
     int comparacion;
     comparacion=strcmp(texto1,texto2);
     if(comparacion==0){
-        std::cout<<"Ambos textos son iguales\n";
+        cout<<"Ambos textos son iguales\n";
     }
     if(comparacion!=0){
-        std::cout<<"Ambos textos son diferentes\n";
+        cout<<"Ambos textos son diferentes\n";
         if(comparacion>0){
-            std::cout<<"El texto 1 es mayor que el texto 2\n";
+            cout<<"El texto 1 es mayor que el texto 2\n";
         }
         if(comparacion<0){
-            std::cout<<"El texto 1 es menor que el texto 2\n";
+            cout<<"El texto 1 es menor que el texto 2\n";
         }
     }
     system("pause");

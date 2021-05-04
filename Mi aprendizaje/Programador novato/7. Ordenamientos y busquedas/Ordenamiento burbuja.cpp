@@ -6,15 +6,14 @@ Mostrar los números de forma descendente.
 Sin burbuja mejorado=20 ciclos
 */
 #include <iostream>
-
+using namespace std; 
 int main(){
     int numeros[5],aux,ciclos=0;
     bool ordenado=false;
-    std::cout<<"Humano inresa 5 numeros (en el pinche orden que quieras):\n";
+    cout<<"Inresa 5 numeros (en el pinche orden que quieras):\n";
     for (int i = 0; i < 5; i++)
     {
-        std::cout<<"Ingresa el numero "<<i+1<<": ";
-        std::cin>>numeros[i];
+        cout<<"Ingresa el numero "<<i+1<<": ";cin>>numeros[i];
     }
     for (int i = 0; i < 5 && ordenado==false; i++)
     {
@@ -30,15 +29,15 @@ int main(){
             ciclos++;
         }
     }
-    std::cout<<"Humano aqui estan tus pinches numeros (ordenados de forma acedente) en " <<ciclos<< " ciclos:\n";
+    cout<<"Numeros (ordenados de forma acedente) en " <<ciclos<< " ciclos:\n";
     for (int i = 0; i < 5; i++)
     {
-        std::cout<<numeros[i]<<"\n";
+        cout<<numeros[i]<<"\n";
     }
-    std::cout<<"Humano aqui estan tus pinches numeros (ordenados de forma decendente) en " <<ciclos<< " ciclos:\n";
+    cout<<"Numeros (ordenados de forma decendente) en " <<ciclos<< " ciclos:\n";
     for (int i = 4; i >= 0; i--)
     {
-        std::cout<<numeros[i]<<"\n";
+        cout<<numeros[i]<<"\n";
     }
 
     system("pause");

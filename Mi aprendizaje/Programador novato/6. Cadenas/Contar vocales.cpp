@@ -1,10 +1,9 @@
 #include <iostream>
-
+using namespace std; 
 int main(){
     char texto[30];
     int la=0,le=0,li=0,lo=0,lu=0;
-    std::cout<<"Humano por favor ingresa una frase con vocales: ";
-    std::cin.getline(texto,30,'\n');
+    cout<<"Ingresa una frase con vocales: ";cin.getline(texto,30,'\n');
     for (int i = 0; i < 30; i++)
     {
         switch (texto[i])
@@ -21,12 +20,12 @@ int main(){
             case 'U': lu++; break;
         }
     }
-    std::cout<<"Humano aqui estan las veces que escribites tus pinches vocales:\n";
-    std::cout<<"Letra a: "<<la<<"\n";
-    std::cout<<"Letra e: "<<le<<"\n";
-    std::cout<<"Letra i: "<<li<<"\n";
-    std::cout<<"Letra o: "<<lo<<"\n";
-    std::cout<<"Letra u: "<<lu<<"\n";
+    cout<<"Humano aqui estan las veces que escribites tus pinches vocales:\n";
+    cout<<"Letra a: "<<la<<endl;
+    cout<<"Letra e: "<<le<<endl;
+    cout<<"Letra i: "<<li<<endl;
+    cout<<"Letra o: "<<lo<<endl;
+    cout<<"Letra u: "<<lu<<endl;
     system("pause");
     return 0;
 }

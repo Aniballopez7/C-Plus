@@ -5,17 +5,15 @@ Colocar los valores del string 1 y 2 en el string 3.
 */
 #include <iostream>
 #include <string.h>
-
+using namespace std; 
 int main(){
     char nombre[20],apellido[20],nombreApellido[40]={};
-    std::cout<<"Humano ingresa tu nombre: ";
-    std::cin>>nombre;
-    std::cout<<"Humano ingresa tu apellido: ";
-    std::cin>>apellido;
+    cout<<"Ingresa tu nombre: ";cin>>nombre;
+    cout<<"Ingresa tu apellido: ";cin>>apellido;
     strcat(nombreApellido,nombre);
     strcat(nombreApellido," ");
     strcat(nombreApellido,apellido);
-    std::cout<<"Humano este es tu pinche nombre y apellido: "<<nombreApellido<<"\n";
+    cout<<"Nombre y apellido: "<<nombreApellido<<"\n";
     system("pause");
     return 0;
 }
