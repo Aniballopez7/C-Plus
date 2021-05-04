@@ -1,4 +1,4 @@
-Sintaxis:
+/*Sintaxis:
 
     Windows		    			                        Linux
 
@@ -30,4 +30,4 @@ igual manera y te dira que presiones Enter y acto seguido aparece el mensaje de 
 Windows:
 Algunos de estos codigos los hice en windows pero hay otros codigos que es la gran mayoria los hice en linux solo vean la sintaxis 
 de los comando de arriba (Linea 5 y 6) de este modo sabran que deben corregir o modificar ya que la sintaxis es la misma lo que cambia 
-son ciertas cosas en este caso pongo esas 2 ya que son las que me dieron errores.
+son ciertas cosas en este caso pongo esas 2 ya que son las que me dieron errores.*/
