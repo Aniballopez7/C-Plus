@@ -7,36 +7,36 @@ Imprimir matrizA y matrizB.
 #include <iostream>
 using namespace std;
 int main(){
-    int matrizA[3][3],matrizB[3][3];
-    for (int i = 0; i < 3; i++)
+    int matrizA[2][2],matrizB[2][2];
+    for (int i = 0; i < 2; i++)
     {
-        for (int j = 0; j < 3; j++)
+        for (int j = 0; j < 2; j++)
         {
             cout<<"Ingresa los datos de la matriz en la pocicion ["<<i+1<<"]["<<j+1<<"]: ";cin>>matrizA[i][j];
         }
         
     }
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 2; i++)
     {
-        for (int j = 0; j < 3; j++)
+        for (int j = 0; j < 2; j++)
         {
             matrizB[i][j]=matrizA[j][i];
         }
         
     }
     cout<<"\nMATRIZ A\n";
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 2; i++)
     {
-        for (int j = 0; j < 3; j++)
+        for (int j = 0; j < 2; j++)
         {
             cout<<matrizA[i][j]<<" ";
         }
         cout<<"\n";
     }
     cout<<"\n\nMATRIZ B\n";
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 2; i++)
     {
-        for (int j = 0; j < 3; j++)
+        for (int j = 0; j < 2; j++)
         {
             cout<<matrizB[i][j]<<" ";
         }
