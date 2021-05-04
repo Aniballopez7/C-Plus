@@ -3,16 +3,11 @@
 #include<iostream>
 #include<conio.h>
 #include<math.h>
-
 using namespace std;
-
 int main(){
-	
 	int menu,opc;
-	float pi=3.14,area,r1,r2,ancho,p,a,g,medida,base,altura,lado,D,d,B,b,r,longitud;
-	
+	float pi=3.14,area,r1,r2,ancho,p,a,g,medida,base,altura,lado,D,d,B,b,r,longitud;	
 	for(menu=0;menu>=0;menu++){
-    
 	cout<<"Menu del programa\n"<<endl;
 	cout<<"1. Calcular el area de un cuadrado"<<endl;
 	cout<<"2. Calcular el area de un triangulo"<<endl;
@@ -30,12 +25,10 @@ int main(){
 	cout<<"14. Calcular el area de una esfera"<<endl;
 	cout<<"15. Calcular el area de una cono"<<endl;
 	cout<<"0. Salir"<<endl;
-	
 	do{
 		cout<<"\nOpcion: ";cin>>opc;
 	}while(opc>15);
 	system("cls");
-	
     switch(opc){
     	case 0:
 				return 0;		
@@ -48,7 +41,6 @@ int main(){
 			getch();
 			system("cls");
 		    break;
-		    
 		case 2:
 			cout<<"Triangulo"<<endl;
 		    cout<<"\nIngrese la base del triangulo: ";cin>>base;
@@ -58,8 +50,7 @@ int main(){
 			cout<<"\n";
 			getch();
 			system("cls");
-	        break; 
-				
+	        break; 	
 		case 3:
 			cout<<"Rectangulo"<<endl;
 			cout<<"\nIngrese la base del rectangulo: ";cin>>base;
@@ -70,7 +61,6 @@ int main(){
 			getch();
 			system("cls");
 			break;
-		
 		case 4:
 			cout<<"Rombo"<<endl;
 			cout<<"\nIngrese la diagonal menor del rombo: ";cin>>d;
@@ -81,7 +71,6 @@ int main(){
 		    getch();
 		    system("cls");
 		    break;
-		    
 		case 5:
 			cout<<"Romboide"<<endl;
 			cout<<"\nIngrese la base del romboide: ";cin>>base;
@@ -92,7 +81,6 @@ int main(){
 			getch();
 			system("cls");
 			break;
-			
 		case 6:
 			cout<<"Trapecio"<<endl;
 			cout<<"\nIngrese la base menor del trapecio: ";cin>>b;
@@ -104,7 +92,6 @@ int main(){
 			getch();
 			system("cls");
 			break;
-			
 		case 7:
 			cout<<"Circulo"<<endl;
 			cout<<"\nIngrese el radio del circulo: ";cin>>r;
@@ -114,7 +101,6 @@ int main(){
 			getch();
 			system("cls");
 		    break;
-		
 		case 8:
 			cout<<"Paralelogramo"<<endl;
 			cout<<"\nIngrese la base del paralelogramo: ";cin>>base;
@@ -125,7 +111,6 @@ int main(){
 			getch();
 			system("cls");
 			break;
-		
 		case 9:
 			cout<<"Ovalo"<<endl;
 			cout<<"\nIngrese la longitud del ovalo: ";cin>>longitud;
@@ -141,7 +126,6 @@ int main(){
 		    getch();
 			system("cls");
 			break;
-			
 		case 10:
 			cout<<"Pentagono"<<endl;
 			cout<<"\nIngrese medida de un lado del pentagono: ";cin>>medida;
@@ -153,7 +137,6 @@ int main(){
 			getch();
 			system("cls");
 			break;
-	
 	    case 11:
 	    	cout<<"Hexagono"<<endl;
 	    	cout<<"\nIngrese la medida de un lado del hexagono: ";cin>>medida;
@@ -166,7 +149,6 @@ int main(){
 	    	getch();
 	    	system("cls");
 	    	break;
-	    
 	    case 12:
 	    	cout<<"Cubo"<<endl;
 	    	cout<<"\nIngrese la medida de un lado del cubo: ";cin>>lado;
@@ -176,7 +158,6 @@ int main(){
 	    	getch();
 	    	system("cls");
 	    	break;
-		
 		case 13:
 			cout<<"Cilindro"<<endl;
 			cout<<"\nIngrese el radio del cilindro: ";cin>>r;
@@ -186,7 +167,6 @@ int main(){
 			getch();
 			system("cls");
 			break;
-		
 		case 14: 
 			cout<<"Esfera"<<endl;
 			cout<<"\nIngrese el radio de la esfera: ";cin>>r;
@@ -195,7 +175,6 @@ int main(){
 			getch();
 			system("cls");
 			break;
-			
 		case 15:
 			cout<<"Cono"<<endl;
 			cout<<"\nIngrese el radio del cono: ";cin>>r;

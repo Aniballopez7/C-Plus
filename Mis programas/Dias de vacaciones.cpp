@@ -2,7 +2,6 @@
 #include<ctime>
 #include <clocale>
 using namespace std;
-
 struct Empleados
 {
     char nombre[50];

@@ -1,13 +1,11 @@
 #include<iostream>
 #include<string.h>
 using namespace std; 
-
 struct Empleados
 {
     char nombre[30];
     float salario;
 }empleados[3];
-
 int main()
 {
     int n;
@@ -18,7 +16,6 @@ int main()
     {
         cout<<"Ingrese el nombre de lo empleados: ";cin>>empleados[i].nombre;
     }
-    
     cout<<"Ingrese los salarios de los siguientes empleados:\n"<<endl;
     for (int i = 0; i < n; i++)
     {

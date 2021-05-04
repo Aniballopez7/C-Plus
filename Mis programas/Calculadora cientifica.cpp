@@ -11,8 +11,7 @@ main()
 	float x[n],r=0,y,w;
 /*La estructura for es para que cuando se termine una operacion regrese automaticamente al menu para que se pueda realizar
 otra operacion */
-    for (inicio=0;inicio>=0;inicio++)
-	{
+    for (inicio=0;inicio>=0;inicio++){
 /*Las siguientes 4 lineas son solo parte de un arte en ASCII para el titulo del programa*/
 		printf("              _____      _            _           _\n             / ____|    | |          | |         | |\n            | |     __ _| | ___ _   _| | __ _  __| | ___  _ __ __ _ \n");
 		printf("            | |    / _` | |/ __| | | | |/ _` |/ _` |/ _ \\| '__/ _` |\n            | |___| (_| | | (__| |_| | | (_| | (_| | (_) | | | (_| |\n             \\_____\\__,_|_|\\___|\\__,_|_|\\__,_|\\__,_|\\___/|_|  \\__,_|\n\n\n");

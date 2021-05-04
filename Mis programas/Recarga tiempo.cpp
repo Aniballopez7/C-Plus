@@ -1,12 +1,10 @@
 #include<iostream>
 using namespace std; 
-
 struct clientes
 {
     char nombres[65];
     int tiempoAire;
 }cliente[3];
-
 int main()
 {
     int tiempoAire=0,id,n;

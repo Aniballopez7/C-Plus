@@ -2,9 +2,7 @@
 
 #include<iostream>
 #include<conio.h>
-
 using namespace std;
-
 int main(){
 	int numero;
 	cout<<"Ingrese un numero del 1 al 7: ";cin>>numero; 

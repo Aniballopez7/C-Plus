@@ -2,14 +2,11 @@
 
 #include<iostream>
 #include<string.h>
-
 using namespace std;
-
 int main(){
 char nombre[18][30];
 int cant=18;
 float total[18],corte1[18],corte2[18];
-
 for(int i=0;i<cant;i++){
 	cout<<"\nIngrese el nombre de estudiante: ";
 	cin>>nombre[i]; 
@@ -19,9 +16,7 @@ for(int i=0;i<cant;i++){
 	cin>>corte2[i];
 		
 }
-
 cout<<"\nLos alumnos reprobados son:"<<endl;
-
 for(int i=0;i<cant;i++){
 	nombre[i];
 	total[i]=((corte1[i]*0.30)+(corte2[i]*0.30));

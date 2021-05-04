@@ -5,7 +5,6 @@ struct Materias
     char nombre[30];
     float notas;
 }materias[13];
-
 int main()
 {
     int n;
