@@ -1,45 +1,37 @@
-/*
-Pedir al humano que ingresar 5 números.
-Ordenar los números.
-Mostrar los números de forma ascendente.
-Mostrar los números de forma descendente.
-Sin burbuja mejorado=20 ciclos
-*/
-#include <iostream>
+#include<iostream>
 using namespace std; 
-int main(){
-    int numeros[5],aux,ciclos=0;
-    bool ordenado=false;
-    cout<<"Inresa 5 numeros (en el pinche orden que quieras):\n";
+int main()
+{
+    int vec[5],aux=0,ciclos=0;
+    cout<<"A continuacion ingresara 5 numeros en el oden que quiera:\n"<<endl;
     for (int i = 0; i < 5; i++)
     {
-        cout<<"Ingresa el numero "<<i+1<<": ";cin>>numeros[i];
+        cout<<"Ingrese un numero ["<<i+1<<"]: ";cin>>vec[i];
     }
-    for (int i = 0; i < 5 && ordenado==false; i++)
+    for (int i = 0; i < 5; i++)
     {
-        ordenado=true;
         for (int j = 0; j < 4; j++)
         {
-            if(numeros[j]>numeros[j+1]){
-                ordenado=false;
-                aux=numeros[j];
-                numeros[j]=numeros[j+1];
-                numeros[j+1]=aux;
+            if (vec[j]>vec[j+1])
+            {
+                aux=vec[j];
+                vec[j]=vec[j+1];
+                vec[j+1]=aux;
             }
             ciclos++;
         }
     }
-    cout<<"Numeros (ordenados de forma acedente) en " <<ciclos<< " ciclos:\n";
+    cout<<"Numeros ordenados de manera ascendente:\n"<<endl;
     for (int i = 0; i < 5; i++)
     {
-        cout<<numeros[i]<<"\n";
+        cout<<vec[i]<<endl;;
     }
-    cout<<"Numeros (ordenados de forma decendente) en " <<ciclos<< " ciclos:\n";
+    cout<<"\n"<<endl;
+    cout<<"Numeros ordenados de manera descendente:\n"<<endl;
     for (int i = 4; i >= 0; i--)
     {
-        cout<<numeros[i]<<"\n";
+        cout<<vec[i]<<endl;;
     }
-
-    system("pause");
-    return 0;
+    cout<<"\nLos numeros se arreglaron en "<<ciclos<<" ciclos"<<endl;
+    system("\nread -p '\nPresiona Enter para continuar...' var");
 }
