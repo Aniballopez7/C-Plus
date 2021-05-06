@@ -2,7 +2,8 @@
 using namespace std; 
 int main()
 {
-    int nelementos,numeros[nelementos],*arreglo,menor=999999,mayor=-999999;
+    int nelementos,numeros[nelementos],*arreglo;
+    int menor=999999,mayor=-999999;
     do
     {
         cout<<"Cuantos elementos va a ingresar: ";cin>>nelementos;
