@@ -5,6 +5,16 @@ int a,b;
 void pedirDatos();
 int retornarExpo(int a,int b);
 void mostrarExpo(int a,int b);
+//TODO: Funcion principal main
+int main()
+{
+    int resultado;
+    pedirDatos();
+    resultado = retornarExpo(a,b);
+    cout<<"El resultado es: "<<resultado<<endl;
+    mostrarExpo(a,b);
+    system("\nread -p '\nPresiona Enter para continuar...' var");
+}
 //TODO: pedir datos
 void pedirDatos(){
     regresar:
@@ -31,14 +41,4 @@ int retornarExpo(int a,int b){
 void mostrarExpo(int a, int b){
     int resultado = retornarExpo(a,b);
     cout<<"Resultado: "<<resultado<<endl;
-}
-//TODO: Funcion principal main
-int main()
-{
-    int resultado;
-    pedirDatos();
-    resultado = retornarExpo(a,b);
-    cout<<"El resultado es: "<<resultado<<endl;
-    mostrarExpo(a,b);
-    system("\nread -p '\nPresiona Enter para continuar...' var");
 }
