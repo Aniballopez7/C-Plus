@@ -1,13 +1,13 @@
 #include <iostream>
 #include <clocale>
 using namespace std;
-void menor(int numeros[],int& menorn,int &n);
-void mayor(int numeros[],int& mayorn,int &n);
-void elementoEspecifico(int numeros[],int& element,int &n);
-void anteriores(int numeros[],int& menorn,int& element,int& mayorn,int &n);
+void menor(int numeros[],int menorn,int &n);
+void mayor(int numeros[],int mayorn,int &n);
+void elementoEspecifico(int numeros[],int element,int &n);
+void anteriores(int numeros[],int menorn,int element,int mayorn,int &n);
 int main(){
     setlocale(LC_CTYPE,"Spanish");
-    int numeros[20],n,opc,menorn, mayorn,element,v;
+    int numeros[20],n,opc,menorn, mayorn,element;
     cout<<"Ingrese el numero de elementos de su arreglo: ";cin>>n;
     cout<<"\n";
     for (int i = 0; i < n; i++)
@@ -56,7 +56,7 @@ int main(){
         }
     } while ((opc>=1)||(opc<6));
 }
-void menor(int numeros[],int& menorn,int& n){
+void menor(int numeros[],int menorn,int& n){
     for (int i = 0; i < n; i++)
     {
         if(numeros[i]<menorn)
@@ -68,7 +68,7 @@ void menor(int numeros[],int& menorn,int& n){
     cout<<"\n";
     system("\nread -p '\nPresiona Enter para volver al menu...' var");
 }   
-void mayor(int numeros[],int& mayorn,int &n){
+void mayor(int numeros[],int mayorn,int &n){
     for (int i = 0; i < n; i++)
     {
         if (numeros[i]>mayorn)
@@ -80,17 +80,14 @@ void mayor(int numeros[],int& mayorn,int &n){
     cout<<"\n";
     system("\nread -p '\nPresiona Enter para volver al menu...' var");
 }
-void elementoEspecifico(int numeros[],int& element,int &n){
-    int cont=0;
-    char v;
+void elementoEspecifico(int numeros[],int element,int &n){
     cout<<"Ingresa el elemento especifico que desea buscar en el arreglo: ";cin>>element;
     cout<<"\n";
+    int cont;
     for (int i = 0; i < n; i++)
     {
-        v = false;
         if (numeros[i]==element)
         {
-            v = true;
             cout<<"Se encontro el elemento "<<element<<" en el arreglo en la pocision: "<<cont<<endl;
         }
         else{
@@ -102,7 +99,7 @@ void elementoEspecifico(int numeros[],int& element,int &n){
     cout<<"\n";
     system("\nread -p '\nPresiona Enter para volver al menu...' var");
 }
-void anteriores(int numeros[],int& menorn,int& element,int& mayorn,int &n){
+void anteriores(int numeros[],int menorn,int element,int mayorn,int &n){
     int cont=0;
     cout<<"Ingresa el elemento especifico que desea buscar en el arreglo: ";cin>>element;
     cout<<"\n";
