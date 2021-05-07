@@ -1,33 +1,31 @@
 #include<iostream>
-using namespace std; 
-void pedirDatos(int *num,int nElementos);
-int menor(int *num,int nElementos);
+using namespace std;
+int n,*num; 
+void pedirDatos();
+void menor();
 int main()
 {
-    int nElementos=0;
-    int num[nElementos];
-    pedirDatos(num,nElementos);
-    int menorq = menor(num,nElementos);
-    cout<<"El menor es: "<<menorq<<endl;
+    pedirDatos();
+    menor();
     system("\nread -p '\nPresiona Enter para continuar...' var");
 }
-void pedirDatos(int *num,int nElementos){
-    cout<<"Ingrese cuantos elementos tendra su arreglo: ";cin>>nElementos;
-    cout<<"\n";
-    for (int i = 0; i < nElementos; i++)
+void pedirDatos(){
+    cout<<"Ingrese la cantidad de elementos que tendra su arreglo: ";cin>>n;
+    num = new int[n]; 
+    for (int i = 0; i < n; i++)
     {
-        cout<<"Numero "<<i+1<<": ";cin>>num[i];
+        cout<<"Numero "<<i+1<<": ";cin>>*(num+i);
     }
     cout<<"\n";
 }
-int menor(int *num,int nElementos){
+void menor(){
     int menor=999999;
-    for (int i = 0; i < nElementos; i++)
+    for (int i = 0; i < n; i++)
     {
-        if (*(num+1)<menor)
+        if (*(num+i)<menor)
         {
-            menor = *(num+1);
+            menor = *(num+i);
         }
     }
-    return menor;
+    cout<<"Menor es: "<<menor<<endl;
 }
