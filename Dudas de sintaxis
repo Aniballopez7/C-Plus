@@ -21,7 +21,7 @@ usar preferiblemente ejecuenten el codigo en otro   compilador (Solo si estan us
 porque hay veces que tiran errores de funciones o librerias y no es especificamente que haya un error de sintaxis si no que el compilador               
 no reconoce dicha libreria o funcion.                                                                                                                   
                                                                                                                                                         
-Si usas otro compilador o entorno de desarrollo CREO que para usar system("pause") o system("cls") incluir la libreria "stdlib.h".                      
+Si usas otro compilador o entorno de desarrollo CREO que para usar system("pause") o system("cls") debes incluir la libreria "stdlib.h".                      
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Linux:                                                                                                                                                  
 En linux no hace falta poner el system("\nread -p '\nPresiona Enter para continuar...' var") al final de la funcion main                                
@@ -29,9 +29,9 @@ ya que de por si el programa se detendra por si solo mostrara:
                                                                                                                                                         
 [1] + Done "/usr/bin/gdb" --interpreter=mi --tty=${DbgTerm} 0<"/tmp/Microsoft-MIEngine-In-ibbndk2s.iet" 1>"/tmp/Microsoft-MIEngine-Out-cb25r6zx.jwi"    
                                                                                                                                                         
-mostrara el mensaje de Arriba (Linea 24) y luego dira que presione cualquier tecla y se cerrara. Ese mensaje aun no se como                             
+mostrara el mensaje de Arriba (Linea 30) y luego dira que presione cualquier tecla y se cerrara. Ese mensaje aun no se como                             
 quitarlo pero con el "system("\nread -p '\nPresiona Enter para continuar...' var")" lo que haces es pausar el programa de                               
-igual manera y te dira que presiones Enter y acto seguido aparece el mensaje de la (Linea 24) y se cerrara el programa.                                 
+igual manera y te dira que presiones Enter y acto seguido aparece el mensaje de la (Linea 30) y se cerrara el programa.                                 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Windows:                                                                                                                                
 Algunos de estos codigos los hice en windows pero hay otros codigos que es la gran mayoria los hice en linux solo vean la sintaxis      
