@@ -12,9 +12,7 @@ Si utilizan Visual studio code como entorno de desarrollo deben saber que:
 No hace falta incluir la libreria "stdlib.h" para usar:                                                                                                 
                                                                                                                                                         
 Windows: system("pause") o system("cls")                                                                                                                
-Linux: system("\nread -p '\nPresiona Enter para continuar...' var") o system("clear")                                                                   
-                                                                                                                                                        
-Hay librerias que no funcionan como "conio.h" por ende no funcionaria el getch..                                                                        
+Linux: system("\nread -p '\nPresiona Enter para continuar...' var") o system("clear")                                                                                                                                                                                                                                                                                            
                                                                                                                                                         
 En la libreria string.h la funcion "strrev()" no funciona y la "strupr()" es la funcion para pasar a mayusculas, esta si funciona pero, 
 Visual Studio Code no reconoce dicha funcion, sim embargo la puede ejecutar pero aparecere como que hay un error en la sintaxis
@@ -27,7 +25,19 @@ no reconoce dicha libreria o funcion.
                                                                                                                                                         
 Si usas otro compilador o entorno de desarrollo CREO que para usar system("pause") o system("cls") debes incluir la libreria "stdlib.h".                      
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-Linux:                                                                                                                                                  
+Linux:  
+
+La libreria conio.h por defecto no esta habria que instalarla pasos:
+
+sudo apt-get upgrade
+sudo apt-get install git
+git clone https://github.com/zoelabbb/conio.h.git
+cd conio.h
+copian el archivo conio.h --> !! no la carpeta !!
+ir a /usr/include/
+pegar conio.h
+listo
+
 En linux no hace falta poner el system("\nread -p '\nPresiona Enter para continuar...' var") al final de la funcion main                                
 ya que de por si el programa se detendra por si solo mostrara:                                                                                          
                                                                                                                                                         
