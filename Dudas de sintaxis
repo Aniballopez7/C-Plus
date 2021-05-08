@@ -16,8 +16,12 @@ Linux: system("\nread -p '\nPresiona Enter para continuar...' var") o system("cl
                                                                                                                                                         
 Hay librerias que no funcionan como "conio.h" por ende no funcionaria el getch..                                                                        
                                                                                                                                                         
-En la libreria string.h la funcion "strrev()" no funciona y la "strurp o strupr" no recuerdo como   se escribe, pero tampoco funciona, si las van a     
-usar preferiblemente ejecuenten el codigo en otro   compilador (Solo si estan usando Visual studio code y alguna funcion o libreria no funciona)        
+En la libreria string.h la funcion "strrev()" no funciona y la "strupr()" es la funcion para pasar a mayusculas, esta si funciona pero, 
+Visual Studio Code no reconoce dicha funcion, sim embargo la puede ejecutar pero aparecere como que hay un error en la sintaxis
+si las van a usar y no quieren enrrollarse tanto preferiblemente ejecuenten el codigo en otro compilador.
+
+(Solo si estan usando Visual studio code y alguna funcion o libreria no funciona)  
+
 porque hay veces que tiran errores de funciones o librerias y no es especificamente que haya un error de sintaxis si no que el compilador               
 no reconoce dicha libreria o funcion.                                                                                                                   
                                                                                                                                                         
@@ -35,6 +39,6 @@ igual manera y te dira que presiones Enter y acto seguido aparece el mensaje de 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Windows:                                                                                                                                
 Algunos de estos codigos los hice en windows pero hay otros codigos que es la gran mayoria los hice en linux solo vean la sintaxis      
-de los comando de arriba (Linea 5 y 6) de este modo sabran que deben corregir o modificar ya que la sintaxis es la misma lo que cambia     
-son ciertas cosas en este caso pongo esas 2 ya que son las que me dieron errores.                                                       
+de los comando de arriba (Linea 5 y 6) de este modo sabran que deben corregir o modificar ya que la sintaxis es que sea la misma 
+lo que cambia son ciertas cosas por los sistemas operativos en este caso pongo esas 2 ya que son las que me dieron errores.                                                       
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
