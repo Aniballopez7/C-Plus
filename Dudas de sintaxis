@@ -29,13 +29,21 @@ Linux:
 
 La libreria conio.h por defecto no esta habria que instalarla pasos:
 
+Por terminal:
+
 sudo apt-get upgrade
-sudo apt-get install git
-git clone https://github.com/zoelabbb/conio.h.git
-cd conio.h
-copian el archivo conio.h --> !! no la carpeta !!
-ir a /usr/include/
-pegar conio.h
+sudo apt-get install git (En caso de que no lo tengas)
+git clone https://github.com/Aniballopez7/C--/tree/master/Conio.h
+ingresan a la carpeta con cd conio.h
+copian el archivo conio.h --> !! no la carpeta !! con este comando -> sudo cp conio.h /usr/include
+listo
+
+Graficamente:
+
+Primero bajan el archivo que les dejare aqui mismo en mi repositorio de C++ "conio.h"
+luego solo descargan el archivo, ingresan a la carpeta
+luego se van a "su equipo o la raiz" buscan la carpera usr y luego buscan include
+pegan hay el archivo conio
 listo
 
 En linux no hace falta poner el system("\nread -p '\nPresiona Enter para continuar...' var") al final de la funcion main                                
