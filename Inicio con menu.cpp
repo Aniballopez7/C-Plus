@@ -26,5 +26,5 @@ int main(){
             case 1:
                 break;
         }
-    } while ((opc<1)||(opc>4));
+    } while ((opc<=1)||(opc>4));
 }
