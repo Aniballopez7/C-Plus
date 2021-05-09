@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std; 
-void insertarNumero(int n); //int& n o int &n parametros por referecia
+void insertarNumero(int n); //int& n o int &n <-parametros por referecia
 void sumar(int n);
 void mostrar(int n);
 /*TODO: el parametro por referencia lo que hace es guardar el valor de un parametro para ser
