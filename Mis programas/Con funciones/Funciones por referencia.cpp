@@ -1,8 +1,8 @@
 #include<iostream>
 using namespace std; 
-void insertarNumero(int n);
+void insertarNumero(int n); //int& n o int &n
 void sumar(int n);
-void mostrar(int);
+void mostrar(int n);
 /*TODO: el parametro por referencia lo que hace es guardar el valor de un parametro para ser
 utilizado en otra funcion al utilizar ese parametro
 */
@@ -22,4 +22,8 @@ void sumar(int n)
 {
     n += 5;
     cout<<n<<endl;
+}
+void mostrar(int n)
+{
+
 }
