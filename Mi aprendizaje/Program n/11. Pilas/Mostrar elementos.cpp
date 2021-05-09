@@ -17,6 +17,7 @@ int main()
     insertarNodo(pila,6);
     insertarNodo(pila,7);
     cout<<"\n";
+    cout<<"Elementos de la pila\n"<<endl;
     mostrarNodo(pila);
     while (pila!=NULL)
     {
@@ -32,7 +33,7 @@ void insertarNodo(Nodo *&pila,int n)
     Nodo *nuevoNodo = new Nodo();
     nuevoNodo->dato = n;
     nuevoNodo->siguiente = pila;
-    pila = nuevoNodo;nuevoNodo->dato = n;
+    pila = nuevoNodo;
     cout<<"Se ha insertado el numero "<<n<<" correctamente al nodo"<<endl;
 }
 void eliminarNodo(Nodo *&pila,int &n)
