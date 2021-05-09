@@ -43,7 +43,7 @@ Graficamente:
 Primero bajan el archivo que les dejare aqui mismo en mi repositorio de C++ "conio.h"
 luego solo descargan el archivo, ingresan a la carpeta
 luego se van a "su equipo o la raiz" buscan la carpera usr y luego buscan include
-pegan hay el archivo conio
+pegan hay el archivo no la carpeta conio.h
 listo
 
 En linux no hace falta poner el system("\nread -p '\nPresiona Enter para continuar...' var") al final de la funcion main                                
