@@ -5,4 +5,5 @@ using namespace std;
 int main(){
     setlocale(LC_CTYPE,"Spanish");
     
+    system("\nread -p '\nPresiona Enter para volver al menu...' var");
 }
