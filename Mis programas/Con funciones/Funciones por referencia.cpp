@@ -3,6 +3,9 @@ using namespace std;
 void insertarNumero(int n);
 void sumar(int n);
 void mostrar(int);
+/*TODO: el parametro por referencia lo que hace es guardar el valor de un parametro para ser
+utilizado en otra funcion al utilizar ese parametro
+*/
 int main()
 {
     int n;
