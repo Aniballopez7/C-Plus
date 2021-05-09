@@ -4,6 +4,7 @@ using namespace std;
 int main(){
     setlocale(LC_CTYPE,"Spanish");
     int opc;
+    bool regresar = false;
     do
     {
         cout<<"*********************"<<endl;
@@ -26,5 +27,5 @@ int main(){
             case 1:
                 break;
         }
-    } while ((opc<=1)||(opc>4));
+    } while (regresar!=true);
 }
