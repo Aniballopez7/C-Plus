@@ -39,7 +39,7 @@ pegar conio.h
 listo
 
 En linux no hace falta poner el system("\nread -p '\nPresiona Enter para continuar...' var") al final de la funcion main                                
-ya que de por si el programa se detendra por si solo mostrara:                                                                                          
+ya que de por si el programa se detendra por si solo y mostrara:                                                                                          
                                                                                                                                                         
 [1] + Done "/usr/bin/gdb" --interpreter=mi --tty=${DbgTerm} 0<"/tmp/Microsoft-MIEngine-In-ibbndk2s.iet" 1>"/tmp/Microsoft-MIEngine-Out-cb25r6zx.jwi"    
                                                                                                                                                         
