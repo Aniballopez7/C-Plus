@@ -12,7 +12,7 @@ int main()
     sumarReferencia(n);
     system("\nread -p '\nPresiona Enter para continuar...' var");
 }
-void insertarNumero(int& n)
+void insertarNumero(int n)
 {
     cout<<"Ingresa un numero: ";cin>>n;
     cout<<"\n"<<n<<endl;
