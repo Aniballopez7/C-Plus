@@ -2,18 +2,29 @@
 Llene un arreglo con 10 números , calcule el promedio de los elementos y cuantos elementos 
 están por encima del promedio. Realice la mismas operación para el Vector B = 
 
-4 muestre el promedio de A y de B, indique cual es el mayor de los promedios. Ordene con el 
+muestre el promedio de A y de B, indique cual es el mayor de los promedios. Ordene con el 
 método de la burbuja el vector a y muéstrelo.
 */
-
 #include<iostream>
 using namespace std; 
+void insertarVec(int vecA[],int vecB[],int& sumaA,int& sumaB);
+void promedio(int sumaA,int sumaB,float& promedioA, float& promedioB);
+void promedioMayor(int vecA[],int vecB[],float promedioA, float promedioB);
+void mostrarVec(int vecA[]);
+void ordenarVec(int vecA[]);
 int main()
 {
-    int vecA[10],vecB[10],sumaA=0,sumaB=0,auxA,promedioA,promedioB;
-    int encima_promedioA=0,encima_promedioB=0;
-    bool ordenado=false;
-    cout<<"Vector A:\n"<<endl;
+    int vecA[10],vecB[10],sumaA=0,sumaB=0;
+    float promedioA,promedioB;
+    insertarVec(vecA,vecB,sumaA,sumaB);
+    promedio(sumaA,sumaB,promedioA,promedioB);
+    promedioMayor(vecA,vecB,promedioA,promedioB);
+    mostrarVec(vecA);
+    ordenarVec(vecA);
+    system("\nread -p '\nPresiona Enter para continuar...' var");
+}
+void insertarVec(int vecA[],int vecB[],int& sumaA,int& sumaB)
+{
     for (int i = 0; i < 10; i++)
     {
         cout<<"Valor ["<<i+1<<"] del vector: ";cin>>vecA[i];
@@ -26,11 +37,19 @@ int main()
         cout<<"Valor ["<<i+1<<"] del vector: ";cin>>vecB[i];
         sumaB += vecB[i];
     }
-    promedioA = sumaA/10;
-    promedioB = sumaB/10;
-    cout<<"\nPromedio A: "<<promedioA<<endl;
+    cout<<"\n";
+}
+void promedio(int sumaA,int sumaB,float& promedioA, float& promedioB)
+{
+    promedioA = sumaA / 10;
+    promedioB = sumaB / 10;
+    cout<<"Promedio A: "<<promedioA<<endl;
     cout<<"Promedio B: "<<promedioB<<endl;
     cout<<"\n";
+}
+void promedioMayor(int vecA[],int vecB[],float promedioA, float promedioB)
+{
+    int encima_promedioA=0,encima_promedioB=0;
     //Contando elementos por encima del promedio
     for (int i = 0; i < 10; i++)
     {
@@ -73,11 +92,19 @@ int main()
     {
         cout<<"\nEl promedio del vector B es mayor al promedio del vector A"<<endl;
     }
-    cout<<"\nVector A sin ordenar\n"<<endl;
+}
+void mostrarVec(int vecA[])
+{
+    cout<<"\nVector A sin ordenar:\n"<<endl;
     for (int i = 0; i < 10; i++)
     {
         cout<<vecA[i]<<endl;
     }
+}
+void ordenarVec(int vecA[])
+{
+    int auxA;
+    bool ordenado=false;
     for (int i = 0; i < 10 && ordenado == false; i++)
     {
         ordenado = true;
@@ -97,5 +124,4 @@ int main()
     {
         cout<<vecA[i]<<endl;
     }
-    system("\nread -p '\nPresiona Enter para continuar...' var");
 }
