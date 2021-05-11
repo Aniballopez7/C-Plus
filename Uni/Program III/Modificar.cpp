@@ -1,5 +1,4 @@
 #include<iostream>
-#include<conio.h>
 using namespace std;
 
 int main()
@@ -44,6 +43,6 @@ int main()
             cout<<x[i]<<" ";
             cout<<endl;
         }
-    getch();
+    system("\nread -p '\nPresiona Enter para continuar...' var");
     return 0;
 }
