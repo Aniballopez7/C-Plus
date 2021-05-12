@@ -18,13 +18,11 @@ int main()
     {
         cout<<"Valor ["<<i+1<<"] del vector: ";cin>>vecA[i];
         sumaA += vecA[i];
-        
     }
     cout<<"\nVector B:\n"<<endl;
     for (int i = 0; i < 10; i++)
     {
         cout<<"Valor ["<<i+1<<"] del vector: ";cin>>vecB[i];
-        sumaB += vecB[i];
     }
     promedioA = sumaA/10;
     promedioB = sumaB/10;
