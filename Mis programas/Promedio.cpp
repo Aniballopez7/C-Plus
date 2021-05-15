@@ -47,7 +47,7 @@ int main()
         {
             iguales = true;
         }
-        //TODO: En caso de qie sean solo 2 numeros
+        //TODO: En caso de que sean solo 2 numeros
         if (n == 2)
         {
             for (int i = n-1; i >= 0; i--)
