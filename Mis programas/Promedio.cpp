@@ -11,7 +11,7 @@ int main()
     int n;
     bool iguales=false,diferente=false;
     cout<<"Ingresa la cantidad de alumnos: ";cin>>n;
-    float corte[n],corte2[n],corte3[n],corteF[n],promedio[n],mayor=0;
+    float mayor=0;
     //TODO: pedir datos
     for (int i = 0; i < n; i++)
     {
