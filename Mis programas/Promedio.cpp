@@ -43,7 +43,7 @@ int main()
     //TODO: viendo si son iguales los promedios
     for (int i = 0; i < n; i++)
     {
-        if ( alumnos[i].promedio==promedio[i+1])
+        if ( alumnos[i].promedio==alumnos[i].promedio)
         {
             iguales = true;
         }
