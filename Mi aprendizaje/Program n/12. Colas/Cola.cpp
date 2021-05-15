@@ -1,3 +1,6 @@
+//TODO: las colas son una estructura de datos FIFO first in first out 
+//TODO: quiere decir que el primero que entra en el primero que sale
+//TODO: las pilas se usar en algoritmos de busqueda en anchura (BFS)
 #include<iostream>
 using namespace std; 
 struct Nodo

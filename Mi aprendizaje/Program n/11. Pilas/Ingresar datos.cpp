@@ -1,3 +1,6 @@
+//TODO: las pilas son una estructura de datos LIFO list in first out 
+//TODO: quiere decir que el ultimo que entra es primero que sasle
+//TODO: las pilas se usar en algoritmos de busqueda profundidad (DFS)
 #include<iostream>
 using namespace std; 
 struct Nodo
