@@ -9,9 +9,10 @@ struct Promedio
 int main()
 {
     int n;
+    float mayor=0;
     bool iguales=false,diferente=false;
     cout<<"Ingresa la cantidad de alumnos: ";cin>>n;
-    float mayor=0;
+    cout<<"\nColoque las notas en base a 20\n"<<endl;
     //TODO: pedir datos
     for (int i = 0; i < n; i++)
     {
@@ -41,31 +42,29 @@ int main()
         }
     }
     //TODO: viendo si son iguales los promedios
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n && iguales == false; i++)
     {
-        if ( alumnos[i].promedio==alumnos[i].promedio)
+        iguales = true;
+        for (int j = 0; j < n-1; j++)
         {
-            iguales = true;
-        }
-        //TODO: En caso de que sean solo 2 numeros
-        if (n == 2)
-        {
-            for (int i = n-1; i >= 0; i--)
+            if ( alumnos[j].promedio==alumnos[j+1].promedio)
             {
-                if ( alumnos[i].promedio==alumnos[i-1].promedio)
-                {
-                    iguales = true;
-                }
+                iguales = true;
             }
-        }
-        else
-        {
-            diferente = true;
+            else
+            {
+                diferente = true;
+            }
         }
     }
     if ((iguales==true)&&(diferente==false))
     {
-        cout<<"Todos los promedios son iguales"<<endl;
+        cout<<"\nPromedios\n"<<endl;
+        for (int i = 0; i < n; i++)
+        {
+            cout<<"Alumno "<<i+1<<": "<<alumnos[i].promedio<<endl;
+        }
+        cout<<"\nTodos los promedios son iguales"<<endl;
         cout<<"\n";
     }
     else
@@ -73,7 +72,7 @@ int main()
         cout<<"\nPromedios\n"<<endl;
         for (int i = 0; i < n; i++)
         {
-            cout<< alumnos[i].promedio<<endl;
+            cout<<"Alumno "<<i+1<<": "<<alumnos[i].promedio<<endl;
         }
         cout<<"\nEl promedio mas alto es de "<<mayor<<endl;
         cout<<"\n";
