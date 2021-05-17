@@ -5,7 +5,12 @@ Sintaxis:
 system("pause") 		=		system("\nread -p '\nPresiona Enter para continuar...' var")    
 system("cls")			=	        system("clear")                                             
 -------------------------------------------------------------------------------------------------------------------------------------------------------
-NOTAS: Yo utilizo Visual studio code como entorno de desarrollo.                                                                                        
+NOTAS: Yo utilizo Visual studio code como entorno de desarrollo.
+
+En algunos programas veran comentarios "//TODO:" eso es una extesion que resalta la palabra "TODO:"
+y hace mas sencillo identificar comentarios. No tiene mucho misterio, para que no se confundan y 
+piensen que es parte del comentario. Si no tienes la extesion no veras ese resalte en la palabra 
+de color amarillento.
                                                                                                                                                         
 Si utilizan Visual studio code como entorno de desarrollo deben saber que:                                                                              
                                                                                                                                                         
@@ -14,9 +19,8 @@ No hace falta incluir la libreria "stdlib.h" para usar:
 Windows: system("pause") o system("cls")                                                                                                                
 Linux: system("\nread -p '\nPresiona Enter para continuar...' var") o system("clear")                                                                                                                                                                                                                                                                                            
                                                                                                                                                         
-En la libreria string.h la funcion "strrev()" no funciona y la "strupr()" es la funcion para pasar a mayusculas, esta si funciona pero, 
-Visual Studio Code no reconoce dicha funcion, sim embargo la puede ejecutar pero aparecere como que hay un error en la sintaxis
-si las van a usar y no quieren enrrollarse tanto preferiblemente ejecuenten el codigo en otro compilador.
+En la libreria string.h la funcion "strrev()" y la "strupr()" es la funcion para pasar a mayusculas no funcionan, 
+al menos a mi. Si las van a usar y no quieren enrrollarse tanto preferiblemente ejecuenten el codigo en otro compilador.
 
 (Solo si estan usando Visual studio code y alguna funcion o libreria no funciona)  
 
@@ -33,8 +37,8 @@ Por terminal:
 
 sudo apt-get upgrade
 sudo apt-get install git (En caso de que no lo tengas)
-git clone https://github.com/Aniballopez7/C--/tree/master/Conio.h
-ingresan a la carpeta con cd conio.h
+git clone https://github.com/Aniballopez7/C--/blob/master/Conio.h/conio.h
+ingresan a la carpeta con -> cd conio.h
 copian el archivo conio.h --> !! no la carpeta !! con este comando -> sudo cp conio.h /usr/include
 listo
 
@@ -51,9 +55,9 @@ ya que de por si el programa se detendra por si solo y mostrara:
                                                                                                                                                         
 [1] + Done "/usr/bin/gdb" --interpreter=mi --tty=${DbgTerm} 0<"/tmp/Microsoft-MIEngine-In-ibbndk2s.iet" 1>"/tmp/Microsoft-MIEngine-Out-cb25r6zx.jwi"    
                                                                                                                                                         
-mostrara el mensaje de Arriba (Linea 34) y luego dira que presione cualquier tecla y se cerrara. Ese mensaje aun no se como                             
+mostrara el mensaje de Arriba (Linea 56) y luego dira que presione cualquier tecla y se cerrara. Ese mensaje aun no se como                             
 quitarlo pero con el "system("\nread -p '\nPresiona Enter para continuar...' var")" lo que haces es pausar el programa de                               
-igual manera y te dira que presiones Enter y acto seguido aparece el mensaje de la (Linea 34) y se cerrara el programa.                                 
+igual manera y te dira que presiones Enter y acto seguido aparece el mensaje de la (Linea 56) y se cerrara el programa.                                 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Windows:                                                                                                                                
 Algunos de estos codigos los hice en windows pero hay otros codigos que es la gran mayoria los hice en linux solo vean la sintaxis      
