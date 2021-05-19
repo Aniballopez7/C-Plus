@@ -22,7 +22,7 @@ Linux: system("\nread -p '\nPresiona Enter para continuar...' var") o system("cl
 En la libreria string.h la funcion "strrev()" y la "strupr()" es la funcion para pasar a mayusculas no funcionan, 
 al menos a mi. Si las van a usar y no quieren enrrollarse tanto preferiblemente ejecuenten el codigo en otro compilador.
 
-(Solo si estan usando Visual studio code y alguna funcion o libreria no funciona)  
+(Solo si estan usando Visual studio code y alguna funcion o libreria no funciona)  <- ojo
 
 porque hay veces que tiran errores de funciones o librerias y no es especificamente que haya un error de sintaxis si no que el compilador               
 no reconoce dicha libreria o funcion.                                                                                                                   
