@@ -7,6 +7,7 @@ int main(){
     bool regresar = false;
     do
     {
+        system("clear");
         cout<<"*********************"<<endl;
         cout<<"* MENU DEL PROGRAMA *"<<endl;
         cout<<"*********************\n"<<endl;
@@ -23,9 +24,37 @@ int main(){
             system("clear");
         }
         system("clear");  
-        switch (opc){
+        switch (opc)
+        {
             case 1:
-                break;
+                {
+                    system("\nread -p '\nPresiona Enter para continuar...' var");
+                }break;
+            case 2:
+                {
+                    system("\nread -p '\nPresiona Enter para continuar...' var");
+                }break;
+            case 3:
+                {
+                    system("\nread -p '\nPresiona Enter para continuar...' var");
+                }break;
+            case 4:
+                {
+                    system("\nread -p '\nPresiona Enter para continuar...' var");
+                }break;
+            case 5:
+                {
+                    system("\nread -p '\nPresiona Enter para continuar...' var");
+                }break;
+            case 6:
+                {
+                    system("\nread -p '\nPresiona Enter para continuar...' var");
+                }break;
+            case 7:
+                {
+                    system("\nread -p '\nPresiona Enter para continuar...' var");
+                    system("clear");
+                }break;
         }
     } while (regresar!=true);
 }
