@@ -21,23 +21,23 @@ int main()
         {
             case 1:
                 {
-                    system("clear");
                     system("\nread -p '\nPresiona Enter para continuar...' var");
+                    system("clear");
                 }break;
             case 2:
                 {
-                    system("clear");
                     system("\nread -p '\nPresiona Enter para continuar...' var");
+                    system("clear");
                 }break;
             case 3:
                 {
-                    system("clear");
                     system("\nread -p '\nPresiona Enter para continuar...' var");
+                    system("clear");
                 }break;
             case 4:
                 {
-                    system("clear");
                     system("\nread -p '\nPresiona Enter para continuar...' var");
+                    system("clear");
                 }break;
             case 5:
                 {
