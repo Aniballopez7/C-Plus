@@ -17,6 +17,11 @@ int main()
         cout<<"5. "<<endl;
         cout<<"6. Salir\n"<<endl;
         cout<<"Ingresar una opcion: ";cin>>opc;
+        if ((opc < 1)||(opc > 6))
+        {
+            cout<<"Ingrese una opcion valida"<<endl;
+            system("\nread -p '\nPresiona Enter para continuar...' var");
+        }
         system("clear");
         switch (opc)
         {
