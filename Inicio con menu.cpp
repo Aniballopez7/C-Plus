@@ -10,6 +10,9 @@ int main()
     do
     {
         system("clear");
+        cout<<"*********************"<<endl;
+        cout<<"* MENU DEL PROGRAMA *"<<endl; 
+        cout<<"*********************\n"<<endl;
         cout<<"1. "<<endl;
         cout<<"2. "<<endl;
         cout<<"3. "<<endl;
@@ -17,6 +20,7 @@ int main()
         cout<<"5. "<<endl;
         cout<<"6. Salir\n"<<endl;
         cout<<"Ingresar una opcion: ";cin>>opc;
+        cout<<"\n";
         if ((opc < 1)||(opc > 6))
         {
             cout<<"Ingrese una opcion valida"<<endl;
