@@ -26,10 +26,6 @@ class Zapato
         {
             cout<<"Color: "<<color<<" - "<<precio<<endl;
         }
-        void eliminar()
-        {
-
-        }
 };
 void menu();
 int main()
