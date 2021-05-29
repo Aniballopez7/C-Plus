@@ -1,57 +1,44 @@
 #include<iostream>
-#include <clocale>
+#include<stdlib.h>
 using namespace std; 
-class Fecha
+class Rectangulo
 {
     private: //Atributos
-        int dia,mes,anio;
-        long fecha;
+        float largo,ancho;
     public: //Metodos
-        Fecha(int _dia,int _mes,int _anio); //Constructor
-        Fecha(long _fecha); //Constructor 2
-        void ingresarFecha();
-        void ingresarFechaLarga();
-        void mostrarFecha();
-
+        Rectangulo(); //Constructor vacio
+        void insertarDatos();
+        void area();
+        void perimetro();
 };
-Fecha::Fecha(int _dia,int _mes,int _anio)
+Rectangulo::Rectangulo()
 {
-    dia = _dia;
-    mes = _mes;
-    anio = _anio;
+    largo = 0;
+    ancho = 0;
 }
-Fecha::Fecha(long _fecha)
+void Rectangulo::insertarDatos()
 {
-    fecha = _fecha;
+    cout<<"Ingrese el largo del rectangulo: ";cin>>largo;
+    cout<<"Ingrese el ancho del rectangulo: ";cin>>ancho;
+    cout<<"\n";
 }
-void Fecha::ingresarFecha()
+void Rectangulo::area()
 {
-    cout<<"Ingrese una fecha:\n"<<endl;
-    cout<<"Dia: ";cin>>dia;
-    cout<<"Mes: ";cin>>mes;
-    cout<<"Año: ";cin>>anio;
+    float area;
+    area = largo * ancho;
+    cout<<"Area: "<<area<<endl;
 }
-void Fecha::ingresarFechaLarga()
+void Rectangulo::perimetro()
 {
-    cout<<"Ingrese una fecha año,mes y dia: ";cin>>fecha;
-    anio = int(fecha/10000); //Extraer el año
-    mes = int((fecha - anio * 10000) / 100); //Extraer el mes
-    dia = int(fecha - anio * 10000 - mes * 100); //Extraer el dia
-}
-void Fecha::mostrarFecha()
-{
-    cout<<"\nLa fecha es: "<<dia<<"/"<<mes<<"/"<<anio<<"\n"<<endl;
+    float perimetro;
+    perimetro =  ((2 * largo) + (2 * ancho));
+    cout<<"Perimetro: "<<perimetro<<endl;
 }
 int main()
 {
-    setlocale(LC_CTYPE,"Spanish");
-    int dia,mes,anio;
-    long fecha;
-    Fecha hoy(dia,mes,anio); //Dia,mes,año
-    hoy.ingresarFecha();
-    hoy.mostrarFecha();
-    Fecha larga(fecha);
-    larga.ingresarFechaLarga();
-    larga.mostrarFecha();
+    Rectangulo r1; //Creando objeto o instanciar una clase
+    r1.insertarDatos();
+    r1.area();
+    r1.perimetro();
     system("\nread -p '\nPresiona Enter para continuar...' var");
 }
