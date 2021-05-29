@@ -60,7 +60,7 @@ void menu()
                 {
                     string color;
                     double precio;
-                    Zapato z;
+                    Zapato z; //Creando objeto
                     cout<<"Color: ";cin>>color;
                     cout<<"Precio: ";cin>>precio;
                     z.insertar(color,precio);
