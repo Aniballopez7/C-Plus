@@ -14,7 +14,6 @@ class Fecha
         void mostrarFecha();
 
 };
-
 Fecha::Fecha(int _dia,int _mes,int _anio)
 {
     dia = _dia;
@@ -43,7 +42,6 @@ void Fecha::mostrarFecha()
 {
     cout<<"\nLa fecha es: "<<dia<<"/"<<mes<<"/"<<anio<<"\n"<<endl;
 }
-
 int main()
 {
     setlocale(LC_CTYPE,"Spanish");
