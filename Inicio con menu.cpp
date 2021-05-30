@@ -1,3 +1,4 @@
+//Este inicio viene con el inicio en español de una vez
 #include <iostream>
 #include <clocale>
 using namespace std;
