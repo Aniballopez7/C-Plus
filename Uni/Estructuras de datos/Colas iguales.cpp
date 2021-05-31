@@ -173,6 +173,5 @@ void compararColas(Nodo *&front,Nodo *&front2,int cont,int cont2)
     else
     {
         cout<<"Las colas no pueden compararse porque no tienen el mmismo numero de elementos"<<endl;
-    }
-    
+    }   
 }
