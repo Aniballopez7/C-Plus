@@ -47,11 +47,11 @@ int main(){
 }
 void insertarNodoLista(Nodo *&lista,int dato){
     Nodo *nuevoNodo=new Nodo();
-    nuevoNodo->dato=dato;
-    Nodo *aux1=lista;
+    nuevoNodo->dato =dato;
+    Nodo *aux1 = lista;
     Nodo *aux2;
     while ( (aux1!=NULL) && (aux1->dato<dato) ){
-        aux2=aux1;
+        aux2 = aux1;
         aux1=aux1->siguiente;
     }
     if(lista==aux1){
