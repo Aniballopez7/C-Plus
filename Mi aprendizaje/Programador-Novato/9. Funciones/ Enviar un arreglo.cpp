@@ -18,14 +18,16 @@ int main()
     mostrarCuadrado(vector);
     system("\nread -p '\nPresiona Enter para continuar...' var");
 }
-void cuadrado(int vector[]){
+void cuadrado(int vector[])
+{
     for (int i = 0; i < TAM; i++)
     {
         vector[i] *= vector[i]; 
     }
     
 }
-void mostrarCuadrado(int vector[]){
+void mostrarCuadrado(int vector[])
+{
     for (int i = 0; i < TAM; i++)
     {
         cout<<"Numero "<<i+1<<"= "<<vector[i]<<endl;

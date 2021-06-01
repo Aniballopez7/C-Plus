@@ -2,7 +2,7 @@
 #include<string.h>
 using namespace std;
 int n,*num;
-char a=0,e=0,i=0,o=0,u=0; 
+char a = 0,e = 0,i = 0,o = 0,u = 0; 
 void pedirDatos(char *nombre);
 int contar(char *nombre);
 int main()
@@ -17,7 +17,7 @@ void pedirDatos(char *nombre){
     cout<<"Ingresa un nombre: ";cin>>nombre;
 }
 int contar(char *nombre){
-    int contador=0;
+    int contador = 0;
     strupr(nombre);
     while (*nombre)//*noombre != null
     {

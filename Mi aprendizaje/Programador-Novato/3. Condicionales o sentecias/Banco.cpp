@@ -1,38 +1,41 @@
 #include <iostream>
 using namespace std;
-int main(){
+int main()
+{
     int opcion;
-    float total=1000,ingreso,egreso;
-    std::cout<<"Bienvenido al banco\n";
-    regreso:
-    std::cout<<"Por favor digita una opcion:\n";
-    std::cout<<"1.- Ingreso de dinero\n";
-    std::cout<<"2.- Retirar dinero\n";
-    std::cout<<"3.- Salir\n";
-    std::cin>>opcion;
-    switch (opcion)
+    float total = 1000, ingreso, egreso;
+    do
     {
-    case 1:
-        std::cout<<"Cuanto dinero vas a ingresar? ";
-        std::cin>>ingreso;
-        total+=ingreso;
-        std::cout<<"Tienes en el bancon $"<<total<<"\n";
-        goto regreso;
-    case 2:
-        std::cout<<"Cuanto dinero deseas sacar: ";
-        std::cin>>egreso;
-        if(egreso>total){
-            std::cout<<"No tienes tanto dinero, tienes "<<total<<"\n";
-        }else{
-            total-=egreso;
-            std::cout<<"Te queda en el banco $"<<total<<"\n";
+        system("clear");
+        cout<<"Bienvenido al banco\n"<<endl;
+        cout<<"1.- Ingreso de dinero"<<endl;
+        cout<<"2.- Retirar dinero"<<endl;
+        cout<<"3.- Salir\n"<<endl;
+        cout<<"Por favor digita una opcion: ";cin>>opcion;
+        system("clear");
+        switch (opcion)
+        {
+        case 1:
+            cout<<"Cuanto dinero vas a ingresar? ";cin>>ingreso;
+            total += ingreso;
+            cout<<"\nTienes en el bancon $"<<total<<"\n";
+            system("\nread -p '\nPresiona Enter para continuar...' var");
+            break;
+        case 2:
+            cout<<"Cuanto dinero deseas sacar: ";cin>>egreso;
+            if(egreso > total)
+            {
+                cout<<"\nNo tienes tanto dinero, tienes "<<total<<"\n";
+            }
+            else
+            {
+                total -= egreso;
+                cout<<"\nTe queda en el banco $"<<total<<"\n";
+            }
+            system("\nread -p '\nPresiona Enter para continuar...' var");
+            break;
         }
-        goto regreso;
-    case 3:
-        break;
-    default:
-        goto regreso;
-    }
-    system("pause");
+    } while (opcion != 3);
+    system("\nread -p '\nPresiona Enter para continuar...' var");
     return 0;
 }

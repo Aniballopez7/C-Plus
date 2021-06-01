@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-int main(){
+int main()
+{
     int arreglo[100],tamano,mayor=0;
     do
     {
@@ -17,8 +18,6 @@ int main(){
         }
     }
     cout<<"\nEste es tu numero mayor "<<mayor<<"\n";
-    
-
-    system("pause");
+    system("\nread -p '\nPresiona Enter para continuar...' var");
     return 0;
 }

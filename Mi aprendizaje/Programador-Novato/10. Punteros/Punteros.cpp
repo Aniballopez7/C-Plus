@@ -2,7 +2,7 @@
 using namespace std; 
 int main()
 {
-    int num=2;
+    int num = 2;
     int *p; 
     p = &num;
     cout<<"Valor: "<<*p<<endl;

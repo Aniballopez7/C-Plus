@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-int main(){
+int main()
+{
     int matriz[10][10],filas,columnas;
     cout<<"Ingresa cuantas filas tendra tu matriz: ";cin>>filas;
     cout<<"Ingresa cuantas columnas tendra tu matriz: ";cin>>columnas;
@@ -21,6 +22,6 @@ int main(){
         cout<<"\n";
     }
     cout<<"\n";
-    system("pause");
+    system("\nread -p '\nPresiona Enter para continuar...' var");
     return 0;
 }

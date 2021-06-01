@@ -12,11 +12,11 @@ int main()
     cout<<"Segundos: "<<sretornar<<endl;
     system("\nread -p '\nPresiona Enter para continuar...' var");
 }
-void segundosTiempo(int segundos,int& horas,int& min,int& sretornar){
+void segundosTiempo(int segundos,int& horas,int& min,int& sretornar)
+{
     horas = segundos / 3600;
     segundos %= 3600;
     min = segundos / 60;
     segundos %= 60;
-
     sretornar = segundos; 
 }

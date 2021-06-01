@@ -2,7 +2,7 @@
 using namespace std; 
 int main()
 {
-    int vec[5],aux=0,ciclos=0;
+    int vec[5],aux = 0,ciclos = 0;
     cout<<"A continuacion ingresara 5 numeros en el oden que quiera:\n"<<endl;
     for (int i = 0; i < 5; i++)
     {
@@ -12,11 +12,11 @@ int main()
     {
         for (int j = 0; j < 4; j++)
         {
-            if (vec[j]>vec[j+1])
+            if (vec[j] > vec[j+1])
             {
-                aux=vec[j];
-                vec[j]=vec[j+1];
-                vec[j+1]=aux;
+                aux = vec[j];
+                vec[j] = vec[j+1];
+                vec[j+1] = aux;
             }
             ciclos++;
         }

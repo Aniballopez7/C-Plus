@@ -5,7 +5,7 @@ struct Empleados
     char nombre[30];
     int edad;
     float salario;
-}empleados[3],*emple=empleados;
+}empleados[3],*emple = empleados;
 void pedirDatos();
 void mayor();
 int main()

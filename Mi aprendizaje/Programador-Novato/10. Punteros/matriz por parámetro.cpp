@@ -19,7 +19,8 @@ int main()
 }
 //TODO: hay que pasarle una cantidad de columnas al pasarlas por parametros ajuro
 //TODO: las filas son opcionales
-void mostrarMatris(int matriz[][columnas]){
+void mostrarMatris(int matriz[][columnas])
+{
     for (int i = 0; i < filas; i++)
     {
         for (int j = 0; j < columnas; j++)
@@ -30,7 +31,8 @@ void mostrarMatris(int matriz[][columnas]){
     }
     cout<<"\n";
 }
-void cuadrado(int matriz[][columnas]){
+void cuadrado(int matriz[][columnas])
+{
     for (int i = 0; i < filas; i++)
     {
         for (int j = 0; j < columnas; j++)

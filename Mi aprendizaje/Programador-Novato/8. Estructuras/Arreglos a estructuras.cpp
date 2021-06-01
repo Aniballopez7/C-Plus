@@ -5,21 +5,20 @@ struct Empleados
     char id[6];
     char nombre[30];
 }empleados[2];
-int main(){
+int main()
+{
     bool esNumero=true;
     cout<<"Ingresa los datos del empleado\n"<<endl;
     for (int i = 0; i < 2; i++)
     {
-        esNumero==true;
-        regresa:
+        esNumero == true;
         cout<<"Empleado "<<i+1<<" id: ";cin>>empleados[i].id;
         for (int j = 0; j < 6; j++)
         {
-            if (int(empleados[i].id[j]<=47)||int(empleados[i].id[j]>=57))
+            if (int(empleados[i].id[j] <= 47)||int(empleados[i].id[j] >= 57))
             {
-                esNumero==false;
+                esNumero == false;
                 cout<<"El id que ingreso del "<<empleados[i].id<<" no es valido"<<endl;
-                goto regresa;
             }
         } 
         cout<<"Empleado "<<i+1<<" nombre: ";cin>>empleados[i].nombre;

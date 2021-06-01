@@ -13,12 +13,12 @@ void mostrarNodo(Nodo *&pila);
 int main()
 {
     Nodo *pila = NULL;
-    int n;
+    int dato;
     char r;
     do
     {
-        cout<<"Ingresa un numero: ";cin>>n;
-        crearNodo(pila,n);
+        cout<<"Ingresa un numero: ";cin>>dato;
+        crearNodo(pila,dato);
         cout<<"Desea ingresar datos o mas datos (s/n): ";cin>>r;
         cout<<"\n";
     } while ((r=='s')||(r=='S'));
@@ -26,10 +26,10 @@ int main()
     mostrarNodo(pila);
     system("\nread -p '\nPresiona Enter para continuar...' var");
 }
-void crearNodo(Nodo *&pila,int n)
+void crearNodo(Nodo *&pila,int dato)
 {
     Nodo *nuevonodo = new Nodo();
-    nuevonodo->dato = n;
+    nuevonodo->dato = dato;
     nuevonodo->siguiente = pila;
     pila = nuevonodo;
 }
@@ -40,5 +40,4 @@ void mostrarNodo(Nodo *&pila)
         cout<<pila->dato<<endl;
         pila = pila->siguiente;
     }
-    
 }

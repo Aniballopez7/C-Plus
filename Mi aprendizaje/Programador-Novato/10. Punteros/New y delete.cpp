@@ -14,7 +14,8 @@ int main()
     mostrar();
     system("\nread -p '\nPresiona Enter para continuar...' var");
 }
-void pedirDatos(){
+void pedirDatos()
+{
     cout<<"Cuantas calificaciones vas a ingresar: ";cin>>cantidadCalificaciones;
     cout<<"\n";
     calificaciones = new int [cantidadCalificaciones];
@@ -24,10 +25,10 @@ void pedirDatos(){
     }
     cout<<"\n";
 }
-void mostrar(){
+void mostrar()
+{
     for (int i = 0; i < cantidadCalificaciones; i++)
     {
         cout<<"Calificacion "<<i+1<<": "<<calificaciones[i]<<" Dir: "<<&calificaciones[i]<<endl;
     }
-    
 }

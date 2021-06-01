@@ -6,19 +6,21 @@ Mostrar los múltiplos de  de ese número del 1 al 10.
 */
 #include<iostream>
 using namespace std;
-int main(){
+int main()
+{
     int numero;
     do{
         cout<<"Digita un numero entre 1 y 10: ";cin>>numero;
-        if(numero<1 || numero>10){
+        if(numero < 1 || numero > 10)
+        {
             cout<<"Dije que digitaras un numero entre 1 y 10.\n";
         }
-    }while(numero<1 || numero>10);
+    }while(numero < 1 || numero > 10);
     cout<<"\n\n";
     for (int i = 1; i <= 10; i++)
     {
-        cout<<i<<" x "<<numero<<"="<<i*numero<<"\n";
+        cout<<i<<" x "<<numero<<" = "<<i * numero<<"\n";
     }
-    system("pause");
+    system("\nread -p '\nPresiona Enter para continuar...' var");
     return 0;
 }

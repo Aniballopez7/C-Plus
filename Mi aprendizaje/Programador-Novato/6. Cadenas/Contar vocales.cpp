@@ -1,8 +1,9 @@
 #include <iostream>
 using namespace std; 
-int main(){
+int main()
+{
     char texto[30];
-    int la=0,le=0,li=0,lo=0,lu=0;
+    int la = 0,le = 0,li = 0,lo = 0,lu = 0;
     cout<<"Ingresa una frase con vocales: ";cin.getline(texto,30,'\n');
     for (int i = 0; i < 30; i++)
     {
@@ -20,12 +21,12 @@ int main(){
             case 'U': lu++; break;
         }
     }
-    cout<<"Humano aqui estan las veces que escribites tus pinches vocales:\n";
+    cout<<"Veces que escribites tus pinches vocales:\n"<<endl;
     cout<<"Letra a: "<<la<<endl;
     cout<<"Letra e: "<<le<<endl;
     cout<<"Letra i: "<<li<<endl;
     cout<<"Letra o: "<<lo<<endl;
     cout<<"Letra u: "<<lu<<endl;
-    system("pause");
+    system("\nread -p '\nPresiona Enter para continuar...' var");
     return 0;
 }

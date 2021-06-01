@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-int main(){
+int main()
+{
     int a,b,aux;
     cout<<"Vas a escribir lo que se te pida:\n";
     cout<<"Valor de a: ";cin>>a;//10
@@ -11,7 +12,6 @@ int main(){
     cout<<"\nAqui estan valores intercambiados:\n";
     cout<<"Valor de a: "<<a<<"\n";
     cout<<"Valor de b: "<<b<<"\n";
-
-    system("pause");
+    system("\nread -p '\nPresiona Enter para continuar...' var");
     return 0;
 }

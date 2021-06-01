@@ -1,19 +1,15 @@
 #include <iostream>
 using namespace std;
-int main(){
+int main()
+{
     int numero,millar,centenas,decenas,unidades;
     cout<<"Ingresa un numero: ";cin>>numero;//1234
-
-    unidades=numero%10;//=4
-
-    numero=numero/10;//1234/10=123.4
-    decenas=numero%10;//)3
-
-    numero=numero/10;//123/10=12.3
-    centenas=numero%10;//)2
-
-    millar=numero/10;//12/10=1.2
-    
+    unidades = numero  % 10;//=4
+    numero = numero / 10;//1234 / 10=123.4
+    decenas = numero % 10;//)3
+    numero = numero / 10;//123 / 10=12.3
+    centenas = numero % 10;//)2
+    millar = numero / 10;//12/10=1.2
     //cout<<millar<<"-"<<centenas<<"-"<<decenas<<"-"<<unidades;
     switch (millar)
     {
@@ -58,7 +54,6 @@ int main(){
         case 9:cout<<"IX";break;
     }
     cout<<"\n";
-
-    system("pause");
+    system("\nread -p '\nPresiona Enter para continuar...' var");
     return 0;
 }

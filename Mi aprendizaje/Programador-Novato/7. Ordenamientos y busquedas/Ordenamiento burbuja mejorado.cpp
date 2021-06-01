@@ -7,24 +7,25 @@ Sin burbuja mejorado=20 ciclos
 */
 #include <iostream>
 using namespace std; 
-int main(){
-    int numeros[5],aux,ciclos=0;
-    bool ordenado=false;
+int main()
+{
+    int numeros[5],aux,ciclos = 0;
+    bool ordenado = false;
     cout<<"Inresa 5 numeros (en el pinche orden que quieras):\n";
     for (int i = 0; i < 5; i++)
     {
         cout<<"Ingresa el numero "<<i+1<<": ";cin>>numeros[i];
     }
-    for (int i = 0; i < 5 && ordenado==false; i++)
+    for (int i = 0; (i < 5) && (ordenado == false); i++)
     {
-        ordenado=true;
+        ordenado = true;
         for (int j = 0; j < 4; j++)
         {
-            if(numeros[j]>numeros[j+1]){
-                ordenado=false;
-                aux=numeros[j];
-                numeros[j]=numeros[j+1];
-                numeros[j+1]=aux;
+            if(numeros[j] > numeros[j+1]){
+                ordenado = false;
+                aux = numeros[j];
+                numeros[j] = numeros[j+1];
+                numeros[j+1] = aux;
             }
             ciclos++;
         }
@@ -39,7 +40,6 @@ int main(){
     {
         cout<<numeros[i]<<"\n";
     }
-
-    system("pause");
+    system("\nread -p '\nPresiona Enter para continuar...' var");
     return 0;
 }

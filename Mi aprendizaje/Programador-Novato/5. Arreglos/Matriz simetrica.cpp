@@ -6,7 +6,8 @@ Mostrar si las matrices son simétricas a no.
 */
 #include <iostream>
 using namespace std;
-int main(){
+int main()
+{
     int filMatrizA,colMatrizA,filMatrizB,colMatrizB;
     inicio:
     cout<<"Ingresa las medidas filas de la matriz A: ";cin>>filMatrizA;
@@ -42,13 +43,12 @@ int main(){
                     goto llenarDenuvoMatriz;
                 }
             }
-            
         }
     }
     else{
         cout<<"Tu matriz A y B no son cuadradas intenta de nuevo \n";
         goto inicio;
     }
-    system("pause");
+    system("\nread -p '\nPresiona Enter para continuar...' var");
     return 0;
 }

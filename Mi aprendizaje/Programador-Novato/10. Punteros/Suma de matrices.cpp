@@ -12,7 +12,8 @@ int main()
     mostrar();
     system("\nread -p '\nPresiona Enter para continuar...' var");
 }
-void pedirDatos(){
+void pedirDatos()
+{
     cout<<"Cuantas filas va a contener tu matriz: ";cin>>filas;
     cout<<"Cuantas columnas va a contener tu matriz: ";cin>>columnas;
     cout<<"\n";
@@ -40,7 +41,8 @@ void pedirDatos(){
         }
     }
 }
-void suma(){
+void suma()
+{
     for (int i = 0; i < filas; i++)
     {
         for (int j = 0; j < columnas; j++)
@@ -49,7 +51,8 @@ void suma(){
         }
     }
 }
-void mostrar(){
+void mostrar()
+{
     cout<<"Suma de las matrices:\n"<<endl;
     for (int i = 0; i < filas; i++)
     {

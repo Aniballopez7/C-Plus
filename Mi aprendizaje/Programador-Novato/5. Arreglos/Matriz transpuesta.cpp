@@ -6,7 +6,8 @@ Imprimir matrizA y matrizB.
 */
 #include <iostream>
 using namespace std;
-int main(){
+int main()
+{
     int matrizA[2][2],matrizB[2][2];
     for (int i = 0; i < 2; i++)
     {
@@ -42,6 +43,6 @@ int main(){
         }
         cout<<"\n";
     }
-    system("pause");
+    system("\nread -p '\nPresiona Enter para continuar...' var");
     return 0;
 }

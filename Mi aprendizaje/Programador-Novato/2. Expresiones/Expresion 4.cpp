@@ -1,19 +1,17 @@
 #include <iostream>
-
-int main(){
+using namespace std;
+int main()
+{
     float a,b,c,d,e,f,res;
-    std::cout<<"Ingresa los valores numericos que se te pida\n";
-    std::cout<<"Valor a: ";std::cin>>a;
-    std::cout<<"Valor b: ";std::cin>>b;
-    std::cout<<"Valor c: ";std::cin>>c;
-    std::cout<<"Valor d: ";std::cin>>d;
-    std::cout<<"Valor e: ";std::cin>>e;
-    std::cout<<"Valor f: ";std::cin>>f;
-
-    res=(a+(b/c)) / (d+(e/f));
-
-    std::cout<<"\nResultado: "<<res<<"\n";
-
-    system("pause");
+    cout<<"Ingresa los valores numericos que se te pida\n";
+    cout<<"Valor a: ";cin>>a;
+    cout<<"Valor b: ";cin>>b;
+    cout<<"Valor c: ";cin>>c;
+    cout<<"Valor d: ";cin>>d;
+    cout<<"Valor e: ";cin>>e;
+    cout<<"Valor f: ";cin>>f;
+    res = (a + (b / c)) / (d + (e / f));
+    cout<<"\nResultado: "<<res<<"\n";
+    system("\nread -p '\nPresiona Enter para continuar...' var");
     return 0;
 }

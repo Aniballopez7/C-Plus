@@ -13,6 +13,7 @@ int main()
     system("\nread -p '\nPresiona Enter para continuar...' var");
 }
 template <class elTipo>
-void mostrarNumero(elTipo numero){
+void mostrarNumero(elTipo numero)
+{
     cout<<"Mostrar el numero: "<<numero<<"\n";
 }

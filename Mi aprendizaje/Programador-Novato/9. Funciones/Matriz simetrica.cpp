@@ -17,7 +17,8 @@ int main()
     }
     system("\nread -p '\nPresiona Enter para continuar...' var");
 }
-void pedirDatos(int m[][c]){
+void pedirDatos(int m[][c])
+{
     cout<<"Ingresa los datos de la matriz simetrica:\n"<<endl;
     for (int i = 0; i < f; i++)
     {
@@ -27,15 +28,16 @@ void pedirDatos(int m[][c]){
         }
     }
 }
-bool simetria(int m[][c]){
-    bool simetria=true;
+bool simetria(int m[][c])
+{
+    bool simetria = true;
     for (int i = 0; i < f; i++)
     {
         for (int j = 0; j < c; j++)
         {
             if (m[i][j]!=m[j][i])
             {
-                simetria=false;
+                simetria = false;
             }
         }
     }

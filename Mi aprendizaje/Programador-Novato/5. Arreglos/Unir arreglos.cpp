@@ -5,7 +5,8 @@ Unir el arreglo uno y dos en un tercer vector.
 */
 #include <iostream>
 using namespace std;
-int main(){
+int main()
+{
     int arreglo1[5],arreglo2[5],arreglo3[10];
     for (int i = 0; i < 5; i++)
     {
@@ -17,10 +18,10 @@ int main(){
     }
     for (int i = 0; i < 10; i++)
     {
-        if(i<5){
+        if(i < 5){
             arreglo3[i]=arreglo1[i];
         }
-        if(i>=5){
+        if(i >= 5){
             arreglo3[i]=arreglo2[i-5];
         }
     }
@@ -28,6 +29,6 @@ int main(){
     {
         cout<<i+1<<".- "<<arreglo3[i]<<"\n";
     }
-    system("pause");
+    system("\nread -p '\nPresiona Enter para continuar...' var");
     return 0;
 }

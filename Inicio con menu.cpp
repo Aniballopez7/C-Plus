@@ -27,7 +27,7 @@ int main()
             cout<<"Ingrese una opcion valida"<<endl;
             system("\nread -p '\nPresiona Enter para continuar...' var");
         }
-        //system("clear"); si quieres que se limpie la pantalla o no
+        //system("clear"); //si quieres que se limpie la pantalla o no
         switch (opc)
         {
             case 1:

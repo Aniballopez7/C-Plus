@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std; 
-int main(){
-    int numeros[5],aux,pos=0;
+int main()
+{
+    int numeros[5],aux,pos = 0;
     cout<<"Ingresa los siguientes datos:\n";
     for (int i = 0; i < 5; i++)
     {
@@ -9,14 +10,14 @@ int main(){
     }
     for (int i = 0; i < 5; i++)
     {
-        pos=i;
-        aux=numeros[i];
-        while ( (pos>0) && (numeros[pos-1]>aux) )
+        pos = i;
+        aux = numeros[i];
+        while ((pos > 0) && (numeros[pos-1] > aux))
         {
-            numeros[pos]=numeros[pos-1];
+            numeros[pos] = numeros[pos-1];
             pos--;
         }
-        numeros[pos]=aux;
+        numeros[pos] = aux;
     }
     cout<<"Numero ordenados de forma acendente:\n";
     for (int i = 0; i < 5; i++)
@@ -28,6 +29,6 @@ int main(){
     {
         cout<<numeros[i]<<"\n";
     }
-    system("pause");
+    system("\nread -p '\nPresiona Enter para continuar...' var");
     return 0;
 }

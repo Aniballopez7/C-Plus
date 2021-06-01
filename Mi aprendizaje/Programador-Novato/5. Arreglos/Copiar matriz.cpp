@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-int main(){
+int main()
+{
     int matriza[100][100],matrizb[100][100],filas,columnas;
     cout<<"Ingresa la catidad de filas de tu matriz : ";cin>>filas;
     cout<<"Ingresa la catidad de columnas de tu matriz : ";cin>>columnas;
@@ -18,8 +19,6 @@ int main(){
         {
             matrizb[i][j]=matriza[i][j];
         }
-        
-        
     }
     cout<<"\n";
     for (int i = 0; i < filas; i++)
@@ -31,6 +30,6 @@ int main(){
         cout<<"\n";
     }
     cout<<"\n";
-    system("pause");
+    system("\nread -p '\nPresiona Enter para continuar...' var");
     return 0;
 }

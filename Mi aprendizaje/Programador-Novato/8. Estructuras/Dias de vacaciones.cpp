@@ -6,13 +6,13 @@ struct Empleados
 {
     char nombre[50];
     int aIngresos,aTrabajado,diasV;
-}empleados[3]={{"pepe"},{"maria"},"kuso"};
+}empleados[3] = {{"pepe"},{"maria"},"kuso"};
 int main()
 {
     setlocale(LC_CTYPE,"Spanish");
-    time_t t=time(NULL);
-    tm* timePtr=localtime(&t);
-    int aActual=timePtr->tm_year+1900;
+    time_t t = time(NULL);
+    tm* timePtr = localtime(&t);
+    int aActual = timePtr->tm_year + 1900;
     cout<<"Ingresa los años de ingreso de cada empleado\n"<<endl;
     for (int i = 0; i < 3; i++)
     {

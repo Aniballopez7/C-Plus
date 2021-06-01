@@ -10,12 +10,13 @@ int main()
     mostrar();
     for (int i = 0; i < filas; i++)
     {
-         delete [] matriz[i];
+        delete matriz[i];
     }
     delete [] matriz;
     system("\nread -p '\nPresiona Enter para continuar...' var");
 }
-void pedirDatos(){
+void pedirDatos()
+{
     cout<<"Cuantas filas va a contener tu matriz: ";cin>>filas;
     cout<<"Cuantas columnas va a contener tu matriz: ";cin>>columnas;
     cout<<"\n";
@@ -33,7 +34,8 @@ void pedirDatos(){
         }
     }
 }
-void mostrar(){
+void mostrar()
+{
     cout<<"\nMatriz:\n"<<endl;
     for (int i = 0; i < filas; i++)
     {

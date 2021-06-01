@@ -6,17 +6,18 @@ void pedirDatos();
 int retornarExpo(int a,int b);
 void mostrarExpo(int a,int b);
 //TODO: pedir datos
-void pedirDatos(){
+void pedirDatos()
+{
     regresar:
     cout<<"Ingrese un numero: ";cin>>a;
     cout<<"Ingrese el exponente: ";cin>>b;
-    if (a<0)
+    if (a < 0)
     {
         cout<<"El numero no es positivo"<<endl;
         cout<<"\n";
         goto regresar;
     }
-    if (b<0)
+    if (b < 0)
     {
         cout<<"El numero no es positivo"<<endl;
         cout<<"\n";
@@ -24,8 +25,9 @@ void pedirDatos(){
     }
 }
 //TODO: retornar
-int retornarExpo(int a,int b){
-    long resultado=1;
+int retornarExpo(int a,int b)
+{
+    long resultado = 1;
     for (int i = 1; i <= b; i++)
     {
         resultado *= a;
@@ -33,7 +35,8 @@ int retornarExpo(int a,int b){
     return resultado;
 }
 //TODO: mostrar
-void mostrarExpo(int a, int b){
+void mostrarExpo(int a, int b)
+{
     long resultado = retornarExpo(a,b);
     cout<<"Resultado: "<<resultado<<endl;
 }

@@ -13,8 +13,8 @@ int main()
     cout<<"Numero 2: "<<n2<<endl;
     system("\nread -p '\nPresiona Enter para continuar...' var");
 }
-
-void intercambio(int& n1,int& n2){
+void intercambio(int& n1,int& n2)
+{
     int aux;
     aux = n1;
     n1 = n2;

@@ -17,7 +17,8 @@ int main()
     cout<<"Uno: "<<uno<<endl;
     system("\nread -p '\nPresiona Enter para continuar...' var");
 }
-void Entregar(int dinero,int& quinientos,int& docientos,int& cien,int& cincuenta,int& veinte,int& diez, int& cinco, int& uno){
+void Entregar(int dinero,int& quinientos,int& docientos,int& cien,int& cincuenta,int& veinte,int& diez, int& cinco, int& uno)
+{
     cien = dinero / 100;
     dinero %= 100;
 

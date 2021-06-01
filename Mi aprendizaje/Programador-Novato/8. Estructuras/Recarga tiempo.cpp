@@ -38,7 +38,6 @@ int main()
             {
                 cout<<"Nombre: "<<cliente[i].nombres<<" Id: "<<i<<" Tiempo aire: "<<cliente[i].tiempoAire<<endl;
             }
-            
         }
     system("\nread -p '\nPresiona Enter para continuar...' var");
 }

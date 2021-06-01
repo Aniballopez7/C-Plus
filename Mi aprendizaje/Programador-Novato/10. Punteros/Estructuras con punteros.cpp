@@ -4,7 +4,7 @@ struct Empleados
 {
     char nombre[30];
     int edad;
-}e1,*emple=&e1;
+}e1,*emple = &e1;
 void pedirDatos();
 void mostrar();
 int main()

@@ -6,7 +6,8 @@ Bucle que genere una serie fibonacci de 1 hasta n.
 */
 #include <iostream>
 using namespace std;
-int main(){
+int main()
+{
     int n,x=0,y=1,z=0;
     do
     {
@@ -21,6 +22,6 @@ int main(){
         y=z;
     }
     cout<<"\n";
-    system("pause");
+    system("\nread -p '\nPresiona Enter para continuar...' var");
     return 0;
 }

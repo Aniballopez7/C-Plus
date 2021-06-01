@@ -10,7 +10,8 @@ int main()
     cout<<"Resultado: "<<resultado<<endl;
     system("\nread -p '\nPresiona Enter para continuar...' var");
 }
-int suma(int valA, int valB){
+int suma(int valA, int valB)
+{
     int resultado;
     resultado = valA +valB;
     return resultado;
