@@ -11,7 +11,7 @@ int main()
     bool salir = false;
     do
     {
-        system("cls");
+        system("clear");
         cout<<"*********************"<<endl;
         cout<<"* MENU DEL PROGRAMA *"<<endl; 
         cout<<"*********************\n"<<endl;
@@ -48,6 +48,10 @@ int main()
                     system("pause");
                 }break;
             case 5:
+            {
+                system("pause");
+            }break;
+            case 6:
                 {
                     salir = true;
                 }break;
