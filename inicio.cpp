@@ -3,5 +3,5 @@
 using namespace std; 
 int main()
 {
-    system("pause");
+    cout<<"Hola"<<endl;
 }

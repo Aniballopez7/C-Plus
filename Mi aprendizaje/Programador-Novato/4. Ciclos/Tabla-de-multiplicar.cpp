@@ -10,13 +10,13 @@ int main()
 {
     int numero;
     do{
-        cout<<"Digita un numero entre 1 y 10: ";cin>>numero;
+        cout<<"\nDigita un numero entre 1 y 10: ";cin>>numero;
         if(numero < 1 || numero > 10)
         {
             cout<<"Dije que digitaras un numero entre 1 y 10.\n";
         }
     }while(numero < 1 || numero > 10);
-    cout<<"\n\n";
+    cout<<"\n";
     for (int i = 1; i <= 10; i++)
     {
         cout<<i<<" x "<<numero<<" = "<<i * numero<<"\n";
